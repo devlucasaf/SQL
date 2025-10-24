@@ -1,6 +1,6 @@
-CREATE DATABASE TesteLucas;
+CREATE DATABASE Teste;
 GO
-USE TesteLucas;
+USE Teste;
 GO
 CREATE TABLE Jogos (
     id INT PRIMARY KEY IDENTITY(1,1),
