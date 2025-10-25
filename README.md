@@ -1,3 +1,8 @@
+<img 
+    width=100% 
+    src="https://capsule-render.vercel.app/api?type=waving&color=A020F0&height=120&section=header"
+/>
+
 <div align="center">
     <h1>🎲 SQL</h1>
 </div>
@@ -48,3 +53,8 @@ O repositório pode acabar bagunçado — os arquivos serão salvos a fim de mos
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
     />
 </div>
+
+<img 
+    width=100% 
+    src="https://capsule-render.vercel.app/api?type=waving&color=A020F0&height=120&section=footer"
+/>
