@@ -4,7 +4,7 @@
 
 -- Criação das tabelas
 
-CREATE TABLE Pessoa(CPF	VARCHAR(11)		NOT NULL
+CREATE TABLE Pessoa(CPF	VARCHAR(11)		NOT NULL,
 				Nome	VARCHAR(30)		NOT NULL	UNIQUE,
 				Sexo	CHAR(1)		CHECK(Sexo IN('M','F')),
 				PRIMARY KEY(CPF)
@@ -24,7 +24,7 @@ CREATE TABLE Passageiro(P_CPF	VARCHAR(11)		NOT NULL,
 				REFERENCES Pessoa(CPF)
 );
 
-CREATE TABLE Telefone(Numero		VARCHAR(10) NOT NULL
+CREATE TABLE Telefone(Numero		VARCHAR(10) NOT NULL,
 				Pas_P_CPF			VARCHAR(11) NOT NULL,
 				PRIMARY KEY(Numero, Pas_P_CPF),
 				FOREIGN KEY(Pas_P_CPF)
@@ -130,3 +130,30 @@ Values('333', 202);
 Insert Into Reserva(Pas_P_CPF, V_Numero)
 Values('333', 404);
 commit;
+
+-- Consultas:
+
+-- Listar todas as pessoas cadastradas
+SELECT * FROM Pessoa;
+
+-- Listar apenas nomes e sexo das pessoas
+SELECT Nome, Sexo FROM Pessoa;
+
+-- Ver todos os pilotos
+SELECT * FROM Piloto;
+
+-- Ver todos os passageiros
+SELECT * FROM Passageiro;
+
+-- Ver todos os telefones registrados
+SELECT * FROM Telefone;
+
+-- Ver todos os voos
+SELECT * FROM Voo;
+
+-- Ver todas as reservas
+SELECT * FROM Reserva;
+
+-- Ver todas as tabelas do banco:
+
+SHOW TABLES;
