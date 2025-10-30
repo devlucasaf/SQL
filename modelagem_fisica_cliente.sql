@@ -1,6 +1,6 @@
 /* 
-Neste primeiro código, o professor ensinou como funciona a  Modelagem
-Lógica e Física
+Curso Udemy: O curso completo de Banco de Dados e SQL, sem mistérios!
+Professor: Felipe Mafra
 Data: 30-10-25
 Aula 18: Modelagem Lógica e Física
 Aula 19: Modelagem Física
