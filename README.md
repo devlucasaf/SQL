@@ -52,6 +52,14 @@ O repositório pode acabar bagunçado — os arquivos serão salvos a fim de mos
         style="padding-right: 10px;" 
         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-original.svg"
     />
+    <img
+        align="center"
+        alt="Excel"
+        tittle="Excel"
+        height="60" 
+        style="padding-right: 10px;" 
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png"
+    />
 </div>
 
 <img 
