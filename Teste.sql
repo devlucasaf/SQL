@@ -1,18 +1,16 @@
-CREATE DATABASE Teste;
-GO
-USE Teste;
-GO
-CREATE TABLE Jogos (
-    id INT PRIMARY KEY IDENTITY(1,1),
-    nome NVARCHAR(50),
-    categoria NVARCHAR(30),
-    preco DECIMAL(10,2)
+CREATE DATABASE teste;
+
+CREATE TABLE jogos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(50),
+    categoria VARCHAR(30),
+    preco NUMERIC(10,2)
 );
-GO
-INSERT INTO Jogos (nome, categoria, preco)
+
+INSERT INTO jogos (nome, categoria, preco)
 VALUES
-('FIFA 25', 'Esportes', 249.00),
+('EA FC 26', 'Esportes', 249.00),
 ('GTA V', 'Ação', 89.99),
 ('The Witcher 3', 'RPG', 99.90);
-GO
-SELECT * FROM Jogos;
+
+SELECT * FROM jogos;
