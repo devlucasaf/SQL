@@ -1,51 +1,50 @@
--- Utilizando o UPDATE para atualizar os valores
+DO $$
+BEGIN
+    -- Visualização inicial
+    RAISE NOTICE 'Estado inicial da tabela CLIENTE:';
+    PERFORM nome, email FROM cliente;
 
-SELECT NOME, EMAIL
-FROM CLIENTE;
+    -- Atualização geral (sem WHERE)
+    UPDATE cliente
+    SET email = 'LILIAN@HOTMAIL.COM';
 
-UPDATE CLIENTE
-SET EMAIL = 'LILIAN@HOTMAIL.COM'
+    -- Consultas específicas
+    RAISE NOTICE 'Registro da LILIAN:';
+    PERFORM * FROM cliente WHERE nome = 'LILIAN';
 
-SELECT NOME, EMAIL
-FROM CLIENTE;
+    RAISE NOTICE 'Registro do JOAO (antes da atualização):';
+    PERFORM * FROM cliente WHERE nome = 'JOAO';
 
-SELECT * FROM CLIENTE
-WHERE NOME = 'LILIAN';
+    -- Atualização do JOAO
+    UPDATE cliente
+    SET email = 'JOAO@IG.COM.BR'
+    WHERE nome = 'JOAO';
 
-SELECT * FROM CLIENTE
-WHERE NOME = 'JOAO';
+    RAISE NOTICE 'Tabela após atualizar JOAO:';
+    PERFORM nome, email FROM cliente;
 
-UPDATE CLIENTE
-SET EMAIL = 'JOAO@IG.COM.BR'
-WHERE NOME = 'JOAO';
+    -- Atualização do JORGE
+    UPDATE cliente
+    SET email = 'JORGE@IG.COM.BR'
+    WHERE nome = 'JORGE';
 
-SELECT NOME, EMAIL
-FROM CLIENTE;
+    -- Atualização da CELTA
+    UPDATE cliente
+    SET email = 'CELTA@HOTMAIL.COM.BR'
+    WHERE nome = 'CELTA';
 
-UPDATE CLIENTE
-SET EMAIL = 'JORGE@IG.COM.BR'
-WHERE NOME = 'JORGE';
+    -- Atualização da ANA
+    UPDATE cliente
+    SET email = 'ANA@HOTMAIL.COM.BR'
+    WHERE nome = 'ANA';
 
-SELECT NOME, EMAIL
-FROM CLIENTE;
+    -- Atualização da CARLA
+    UPDATE cliente
+    SET email = 'CARLA@IG.COM.BR'
+    WHERE nome = 'CARLA';
 
-UPDATE CLIENTE
-SET EMAIL = 'CELTA@HOTMAIL.COM.BR'
-WHERE NOME = 'CELTA';
-
-SELECT NOME, EMAIL
-FROM CLIENTE;
-
-UPDATE CLIENTE
-SET EMAIL = 'ANA@HOTMAIL.COM.BR'
-WHERE NOME = 'ANA';
-
-SELECT NOME, EMAIL
-FROM CLIENTE;
-
-UPDATE CLIENTE
-SET EMAIL = 'CARLA@IG.COM.BR'
-WHERE NOME = 'CARLA';
-
-SELECT NOME, EMAIL
-FROM CLIENTE;
+    -- Visualização final
+    RAISE NOTICE 'Estado final da tabela CLIENTE:';
+    PERFORM nome, email FROM cliente;
+END;
+$$ LANGUAGE plpgsql;
