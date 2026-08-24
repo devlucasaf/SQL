@@ -1,0 +1,445 @@
+CREATE DATABASE FUTEBOL;
+
+USE FUTEBOL;
+
+CREATE TABLE TIMES(
+	NOME VARCHAR(50),
+	SIGLA VARCHAR(10),
+	ANO INTEGER,
+	CORES VARCHAR(50),
+	QNTD_JOGADORES INTEGER,
+	TECNICO VARCHAR(50),
+	PRESIDENTE VARCHAR(50),
+	PATROCINADOR VARCHAR(50),
+	FORNECEDOR VARCHAR(50),
+	TITULOS INTEGER,
+	MASCOTE VARCHAR(50),
+	ESTADIO VARCHAR(50),
+	CONTINENTE VARCHAR(50),
+	PAIS VARCHAR(50),
+	CIDADE VARCHAR(50),
+	LIGA VARCHAR(50)
+);
+
+INSERT INTO TIMES VALUES('Fluminense', 'FLU', 1902, 'Tricolor', 32, 'Luis Zubeldía', 'Mário Bittencourt', 'Superbet', 'Umbro', 63, 'Cartola', 'Laranjeiras', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Brasileirão');
+INSERT INTO TIMES VALUES('Grêmio', 'GRE', 1903, 'Tricolor', 37, 'Mano Menezes', 'Alberto Guerra', 'Alfa', 'Umbro', 94, 'Mosqueteiro', 'Arena do Grêmio', 'América do Sul', 'Brasil', 'Porto Alegre', 'Brasileirão');
+INSERT INTO TIMES VALUES('Atlético Mineiro', 'CAM', 1908, 'Alvinegro', 35, 'Jorge Sampaoli', 'Sérgio Coelho', 'H2bet', 'Adidas', 50, 'Galo Doido', 'Arena MRV', 'América do Sul', 'Brasil', 'Belo Horizonte', 'Brasileirão');
+INSERT INTO TIMES VALUES('Coritiba', 'CFC', 1909, 'Alviverde', 35, NULL, 'Marianna Libano', 'Reals', 'Diadora', 45, 'Vovô Coxa', 'Couto Pereira', 'América do Sul', 'Brasil', 'Curitiba', 'Série B');
+INSERT INTO TIMES VALUES('Paraná', 'PAR', 1989, 'Tricolor', 30, 'José Roberto Lucini', 'Ailton Barboza de Souza', 'Neodent', 'Próprio', 9, 'Gralha Azul', 'Vila Capanema', 'América do Sul', 'Brasil', 'Curitiba', 'Estadual');
+INSERT INTO TIMES VALUES('Brasiliense', 'BRC', 2000, 'Amarelo', 30, 'Lúcio Flávio', 'Luiz Estevão', 'Metrópoles', 'Lider Sport', 15, 'Jacaré', 'Boca do Jacaré', 'América do Sul', 'Brasil', 'Brasília', 'Série D');
+INSERT INTO TIMES VALUES('Gama', 'GAMA', 1975, 'Alviverde', 30, 'Luiz Carlos Souza', 'Wendel Lopes', 'Atacadão Dia a Dia', 'Kappa', 16, 'Periquito', 'Bezerrão', 'América do Sul', 'Brasil', 'Brasília', 'Estadual');
+INSERT INTO TIMES VALUES('Bangu', 'BAN', 1904, 'Alvirrubro', 30, 'Alfredo Sampaio', 'Angelo Marques Ferreira', 'FutFanatics', 'Kappa', 15, 'Castor', 'Moça Bonita', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Estadual');
+INSERT INTO TIMES VALUES('Volta Redonda', 'VRE', 1976, 'Aurinegro', 30, 'Rogério Corrêa', 'Flávio Horta', 'BetSpeed', 'Pratic Sport', 8, 'Jaguatirica', 'Raulino de Oliveira', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Série B');
+INSERT INTO TIMES VALUES('Luverdense', 'LUC', 2004, 'Alviverde', 30, 'Wagner Lopes', 'Aluízio Bassani', 'Sicredi', 'Junpe Sports', 8, 'Espiga de Milho', 'Passo das Emas', 'América do Sul', 'Brasil', 'Mato Grosso', 'Série D');
+INSERT INTO TIMES VALUES('Chapecoense', 'CHA', 1973, 'Alviverde', 35, 'Gilmar Dal Pozzo', 'Alex Passos', 'Aurora Alimentos', 'Kappa', 12, 'Índio Condá', 'Arena Condá', 'América do Sul', 'Brasil', 'Santa Catarina', 'Série B');
+INSERT INTO TIMES VALUES('Cuiabá', 'CUI', 2001, 'Auriverde', 33, 'Eduardo Barros', 'Cristiano Dresch', 'Sicredi', 'Kappa', 15, 'Peixe Dourado', 'Arena Pantanal', 'América do Sul', 'Brasil', 'Mato Grosso', 'Serie B');
+INSERT INTO TIMES VALUES('Sinop', 'SIN', 1977, 'Alvianil', 28, 'Hugo de Alcântara', 'Agnaldo Turra', 'Eletromóveis Martinello', 'MP Sports', 3, 'Galo', 'Massami Uriu', 'América do Sul', 'Brasil', 'Sinop', 'Mato-Grossense');
+INSERT INTO TIMES VALUES('San Lorenzo', 'SLO', 1908, 'Azulgrana', 30, 'Damián Ayude', 'Marcelo Moretti', 'IEB+', 'Atomik', 22, 'Corvo', 'El Nuevo Gasómetro', 'América do Sul', 'Argentina', 'Buenos Aires', 'Primera División');
+INSERT INTO TIMES VALUES('Mazembe', 'TPM', 1939, 'Alvinegro', 30, 'Franck Dumas', 'Moïse Katumbi', 'MCK', 'Adidas', 37, 'Corvo', 'Stade TP Mazembe', 'África', 'República Democrática do Congo', 'Lubumbashi', 'Linafoot');
+INSERT INTO TIMES VALUES('Gamba Osaka', 'GAM', 1980, 'Azul e Preto', 31, 'Dani Poyatos', 'Takashi Yamauchi', 'Panasonic', 'Hummel', 9, 'Gamba Boy', 'Suita City', 'Ásia', 'Japão', 'Osaka', 'J1 League');
+INSERT INTO TIMES VALUES('Deportivo Saprissa', 'SAP', 1935, 'Roxo e Branco', 29, 'Jeaustin Campos', 'Juan Carlos Rojas', 'BAC', 'Kappa', 54, 'Monstro', 'Ricardo Saprissa', 'América do Norte', 'Costa Rica', 'San José', 'Primera División');
+INSERT INTO TIMES VALUES('Al-Sadd', 'SAD', 1969, 'Alvinegro', 28, 'Roberto Mancini', 'Mohammed Al Thani', 'Qatar Airways', 'New Balance', 62, 'Lobo', 'Jassim Bin Hamad', 'Ásia', 'Catar', 'Doha', 'Qatar Stars League');
+INSERT INTO TIMES VALUES('Auckland City', 'AUC', 2004, 'Azul Marinho', 26, 'Paul Posa', 'Ivan Vuksich', 'Vuksich & Batson', 'Dynasty', 36, 'Navy Blue', 'Kiwitea Street', 'Oceania', 'Nova Zelândia', 'Auckland', 'Northern League');
+INSERT INTO TIMES VALUES('Sanfrecce Hiroshima', 'SAN', 1938, 'Violeta', 30, 'Michael Skibbe', 'Shingo Senda', 'Edion', 'Nike', 8, 'Sanche', 'Edion Peace Wing', 'Ásia', 'Japão', 'Hiroshima', 'J1 League');
+INSERT INTO TIMES VALUES('Al-Jazira', 'JAZ', 1974, 'Alvinegro', 30, 'Hussein Ammouta', 'Mansour Al Nahyan', 'Healthpoint', 'Zas', 10, 'Gazela', 'Mohammed Bin Zayed', 'Ásia', 'Emirados Árabes', 'Abu Dhabi', 'UAE Pro League');
+INSERT INTO TIMES VALUES('Cruz Azul', 'CAZ', 1927, 'Azul', 28, 'Martín Anselmi', 'Víctor Velázquez', 'Cemento Cruz Azul', 'Pirma', 24, 'Blu', 'Estádio Azteca', 'América do Norte', 'México', 'Cidade do México', 'Liga MX');
+INSERT INTO TIMES VALUES('Guangzhou Evergrande', 'GUA', 1954, 'Vermelho', 28, 'Salvador Suay', 'Xu Jiayin', 'Evergrande', 'Kelme', 18, 'Tigre', 'Tianhe Stadium', 'Ásia', 'China', 'Guangzhou', 'China League One');
+INSERT INTO TIMES VALUES('Flamengo','FLA', 1895, 'Rubro Negro', 30, 'Filipe Luís', 'Luiz Eduardo Baptista', 'Betano', 'Adidas', 79, 'Urubu', 'Gávea', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Brasileirão');
+INSERT INTO TIMES VALUES('Botafogo-PB', 'BFP', 1931, 'Alvinegro', 30, 'Bernardo Franco', 'Roberto Burity', 'Loccel', 'Kappa', 36, 'Belo', 'Almeidão', 'América do Sul', 'Brasil', 'João Pessoa', 'Série C');
+INSERT INTO TIMES VALUES('Botafogo-SP', 'BFS', 1918, 'Tricolor', 30, 'Allan Aal', 'Eduardo Esteves', 'EstrelaBet', 'Volt Sport', 12, 'Pantera', 'Santa Cruz', 'América do Sul', 'Brasil', 'São Paulo', 'Série B');
+INSERT INTO TIMES VALUES('Botafogo', 'BFR', 1894, 'Alvinegro', 35, 'Davide Ancelotti', 'João Paulo Magalhães', 'VBET', 'Reebok', 40, 'Cachorro', 'Engenhão', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Brasileirão');
+INSERT INTO TIMES VALUES('Vasco da Gama', 'VAS', 1898, 'Alvinegro', 35, 'Fernando Diniz', 'Pedrinho', 'Pixbet', 'Kappa', 50, 'Almirante', 'São Januário', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Brasileirão');
+INSERT INTO TIMES VALUES('Santos', 'SAN', 1912, 'Alvinegro', 35, 'Juan Vojvoda', 'Marcelo Teixeira', '7K Bet', 'Umbro', 60, 'Baleia', 'Vila Belmiro', 'América do Sul', 'Brasil', 'São Paulo', 'Brasileirão');
+INSERT INTO TIMES VALUES('São Paulo', 'SAO', 1930, 'Tricolor', 35, 'Hernán Crespo', 'Julio Casares', 'Superbet', 'New Balance', 45, 'Santo Paulo', 'Morumbi', 'América do Sul', 'Brasil', 'São Paulo', 'Brasileirão');
+INSERT INTO TIMES VALUES('Ceilândia', 'CEC', 1979, 'Alvinegro', 30, 'Adelson de Almeida', 'Ari de Almeida', 'Atacadão Dia a Dia', 'Próprio', 10, 'Gato Preto', 'Abadião', 'América do Sul', 'Brasil', 'Brasília', 'Série D');
+INSERT INTO TIMES VALUES('Sobradinho', 'SOB', 1975, 'Alvinegro', 30, 'Antonio Carlos Bona', 'Washington Borges', 'BRB', 'Lider Sport', 5, 'Leão da Serra', 'Augustinho Lima', 'América do Sul', 'Brasil', 'Brasília', 'Estadual');
+INSERT INTO TIMES VALUES('Capital', 'CAP', 2012, 'Tricolor', 30, 'Felipe Surian', 'Godofredo Gonçalves', 'Água Mineral Orgânica', 'Tolledo Sports', 2, 'Coruja', 'Arena da Coruja', 'América do Sul', 'Brasil', 'Brasília', 'Série D');
+INSERT INTO TIMES VALUES('Real Brasília.', 'RBE', 1996, 'Azul e Branco', 30, 'Gerson Ramos', 'Luís Felipe Belmonte', 'BRB', 'Tolledo Sports', 3, 'Leão do Planalto', 'Defelê', 'América do Sul', 'Brasil', 'Brasília', 'Estadual');
+INSERT INTO TIMES VALUES('Palmeiras', 'PAL', 1914, 'Alviverde', 35, 'Abel Ferreira', 'Leila Pereira', 'Sportingbet', 'Puma', 50, 'Porco', 'Allianz Parque', 'América do Sul', 'Brasil', 'São Paulo', 'Brasileirão');
+INSERT INTO TIMES VALUES('Cruzeiro', 'CRU', 1921, 'Azul e Branco', 35, 'Leonardo Jardim', 'Pedro Lourenço', 'Betfair', 'Adidas', 50, 'Raposa', 'Mineirão', 'América do Sul', 'Brasil', 'Belo Horizonte', 'Série A');
+INSERT INTO TIMES VALUES('Boa Esporte', 'BOE', 1947, 'Alviverde', 30, 'Nedo Xavier', 'Rone Moraes', 'Gasmig', 'Icone', 5, 'Touro', 'Melão', 'América do Sul', 'Brasil', 'Varginha', 'Mineiro Mod.');
+INSERT INTO TIMES VALUES('Tombense', 'TOM', 1914, 'Vermelho e Branco', 30, 'Raul Cabral', 'Lane Gaviolle', 'Cemil', 'Kanxa', 3, 'Gavião Carcará', 'Almeidão', 'América do Sul', 'Brasil', 'Tombos', 'Série C');
+INSERT INTO TIMES VALUES('Bahia', 'BAH', 1931, 'Tricolor', 30, 'Rogério Ceni', 'Emerson Ferretti', 'Viva Sorte.Bet', 'Puma', 58, 'Super-Homen', 'Arena Fonte Nova', 'América do Sul', 'Brasil', 'Bahia', 'Brasileirão');
+INSERT INTO TIMES VALUES('Vitória', 'VIT', 1899, 'Rubro Negro', 35, 'Jair Ventura', 'Fabio Mota', '7K Bet', 'Volt Sport', 36, 'Leão', 'Barradão', 'América do Sul', 'Brasil', 'Bahia', 'Brasileirão');
+INSERT INTO TIMES VALUES('Real Madrid', 'RMA', 1902, 'Branco', 25, 'Xabi Alonso', 'Florentino Pérez', 'Emirates', 'Adidas', 132, 'Cachorro', 'Santiago Bernabéu', 'Europa', 'Espanha', 'Madrid', 'La Liga');
+INSERT INTO TIMES VALUES('Barcelona', 'BAR', 1899, 'Blaugrana', 25, 'Hansi Flick', 'Joan Laporta', 'Spotify', 'Nike', 99, 'Gato', 'Camp Nou', 'Europa', 'Espanha', 'Barcelona', 'La Liga');
+INSERT INTO TIMES VALUES('Villarreal', 'VIL', 1923, 'Amarelo', 28, 'Marcelino García', 'Fernando Roig', 'Pamesa Cerámica', 'Joma', 4, 'Submarino Amarelo', 'La Cerámica', 'Europa', 'Espanha', 'Villarreal', 'La Liga');
+INSERT INTO TIMES VALUES('Valencia', 'VAL', 1919, 'Branco e Preto', 28, 'Rubén Baraja', 'Lay Hoon Chan', 'Puma', 'Puma', 30, 'Morcego', 'Mestalla', 'Europa', 'Espanha', 'Valência', 'La Liga');
+INSERT INTO TIMES VALUES('Rayo Vallecano', 'RAY', 1924, 'Branco com faixa vermelha', 25, 'Íñigo Pérez', 'Raúl Martín Presa', 'Digital Padel', 'Umbro', 2, 'Abelha', 'Vallecas', 'Europa', 'Espanha', 'Madrid', 'La Liga');
+INSERT INTO TIMES VALUES('Atletico de Madrid', 'ATM', 1903, 'Alvirrubro', 24, 'Diego Simeone', 'Enrique Cerezo', 'Riyadh Air', 'Nike', 34, 'Guaxinim', 'Riyadh Air Metropolitano', 'Europa', 'Espanha', 'Madrid', 'La Liga');
+INSERT INTO TIMES VALUES('Espanyol', 'ESP', 1900, 'Branco e Azul', 23, 'Manolo González', 'Alan Pace', 'Dani', 'Kelme', 22, 'Periquito', 'RCDE Stadium', 'Europa', 'Espanha', 'Barcelona', 'La Liga');
+INSERT INTO TIMES VALUES('Liverpool', 'LIV', 1892, 'Vermelho', 29, 'Arne Slot', 'Tom Werner', 'Standard Chartered', 'Adidas', 75, 'Mighty Red', 'Anfield', 'Inglaterra', 'Liverpool', 'Premier League');
+INSERT INTO TIMES VALUES('Manchester City', 'MCI', 1880, 'Azul', 28, 'Pep Guardiola', 'Khaldoon Al Mubarak', 'Etihad Airways', 'Puma', 43, 'Moonchester e Moonbeam', 'Etihad Stadium', 'Inglaterra', 'Manchester', 'Premier League');
+INSERT INTO TIMES VALUES('Manchester United', 'MUN', 1878, 'Vermelho', 28, 'Rúben Amorim', 'Joel Glazer', 'Snapdragon', 'Adidas', 70, 'Fred The Red', 'Old Trafford', 'Inglaterra', 'Manchester', 'Premier League');
+INSERT INTO TIMES VALUES('Arsenal', 'ARS', 1886, 'Alvirrubro', 28, 'Mikel Arteta', 'Sir Chips Keswick', 'Emirates', 'Adidas', 48, 'Gunnersaurus Rex', 'Emirates Stadium', 'Inglaterra', 'Londres', 'Premier League');
+INSERT INTO TIMES VALUES('Bayern de Munique', 'BAY', 1900, 'Vermelho e Branco', 28, 'Vincent Kompany', 'Herbert Hainer', 'Deutsche Telekom', 'Adidas', 85, 'Urso', 'Allianz Arena', 'Europa', 'Alemanha', 'Munique', 'Bundesliga');
+INSERT INTO TIMES VALUES('Borussia Dortmund', 'BVB', 1909, 'Amarelo e Preto', 28, 'Nuri Şahin', 'Hans-Joachim Watzke', 'Evonik', 'Puma', 25, 'Abelha', 'Signal Iduna Park', 'Europa', 'Alemanha', 'Dortmund', 'Bundesliga');
+INSERT INTO TIMES VALUES('Zenit', 'ZEN', 1925, 'Azul', 28, 'Sergey Semak', 'Alexander Medvedev', 'Gazprom', 'Kelme', 30, 'Gato', 'Estádio Krestovsky', 'Europa', 'Rússia', 'São Petersburgo', 'Liga Premier Russa');
+INSERT INTO TIMES VALUES('Galatasaray', 'GAL', 1905, 'Vermelho e Amarelo', 30, 'Okan Buruk', 'Dursun Özbek', 'Sixt', 'Puma', 65, 'Leão', 'Rams Park', 'Europa', 'Turquia', 'Istambul', 'Süper Lig');
+INSERT INTO TIMES VALUES('Paris Saint German', 'PSG', 1970, 'Azul, Branco e Vermelho', 28, 'Luis Enrique', 'Nasser Al-Khelaifi', 'Qatar Airways', 'Nike', 50, 'Ousmane', 'Parc des Princes', 'Europa', 'França', 'Paris', 'Ligue 1');
+INSERT INTO TIMES VALUES('PSV Eindhoven', 'PSV', 1913, 'Alvirrubro', 28, 'Peter Bosz', 'Marcel Brands', 'Philips', 'Puma', 45, 'Boeli de Beer', 'Philips Stadion', 'Europa', 'Holanda', 'Eindhoven', 'Eredivisie');
+INSERT INTO TIMES VALUES('Ajax', 'AJX', 1900, 'Alvirrubro', 28, 'Fred Grim', 'Menno Geelen', 'Ziggo', 'Adidas', 75, 'Ajax', 'Johan Cruijff Arena', 'Europa', 'Holanda', 'Amsterdã', 'Eredivisie');
+INSERT INTO TIMES VALUES('Chelsea', 'CHE', 1905, 'Azul', 32, 'Enzo Maresca', 'Todd Boehly', 'FPT Software', 'Nike', 38, 'Leão', 'Stamford Bridge', 'Europa', 'Inglaterra', 'Londres', 'Premier League');
+INSERT INTO TIMES VALUES('Bayer Leverkusen', 'B04', 1904, 'Rubro Negro', 28, 'Kasper Hjulmand', 'Fernando Carro', 'Barmenia', 'New Balance', 6, 'Leão', 'BayArena', 'Europa', 'Alemanha', 'Leverkusen', 'Bundesliga');
+INSERT INTO TIMES VALUES('Porto', 'POR', 1893, 'Azul e Branco', 28, 'Francesco Farioli', 'André Villas-Boas', 'Betano', 'New Balance', 84, 'Dragão', 'Estádio do Dragão', 'Europa', 'Portugal', 'Porto', 'Primeira Liga');
+INSERT INTO TIMES VALUES('Benfica', 'SLB', 1904, 'Vermelho e Branco', 28, 'José Mourinho', 'Rui Costa', 'Emirates', 'Adidas', 86, 'Águia', 'Estádio da Luz', 'Europa', 'Portugal', 'Lisboa', 'Primeira Liga');
+INSERT INTO TIMES VALUES('Sporting', 'SCP', 1906, 'Alviverde', 28, 'Rui Borges', 'Frederico Varandas', 'Betano', 'Nike', 50, 'Leão', 'Estádio de Alvalade', 'Europa', 'Portugal', 'Lisboa', 'Primeira Liga');
+INSERT INTO TIMES VALUES('Bologna', 'BOL', 1909, 'Vermelho e Azul', 28, 'Vincenzo Italiano', 'Joey Saputo', 'Saputo', 'Macron', 25, 'Grifone', 'Renato DallAra', 'Europa', 'Itália', 'Bolonha', 'Serie A');
+INSERT INTO TIMES VALUES('Cremonese', 'CRE', 1903, 'Cinza e Vermelho', 28, 'Giovanni Stroppa', 'Paolo Rossi', 'Arvedi', 'Acerbis', 5, 'Tigre', 'Giovanni Zini', 'Europa', 'Itália', 'Cremona', 'Serie B');
+INSERT INTO TIMES VALUES('Braga', 'S.C.B', 1921, 'Vermelho e Branco', 30, 'Rui Duarte', 'António Salvador', 'Betano', 'New Balance', 16, 'Arcebispo', 'Municipal de Braga', 'Europa', 'Portugal', 'Braga', 'Primeira Liga');
+INSERT INTO TIMES VALUES('Alanyaspor', 'ALA', 1948, 'Laranja e Verde', 30, 'Fatih Tekke', 'Hasan Çavuşoğlu', 'Corendon Airlines', 'Erima', 1, 'Aytemiz', 'Bahçeşehir Okulları', 'Europa', 'Turquia', 'Alanya', 'Süper Lig');
+INSERT INTO TIMES VALUES('Fenerbahçe', 'FEN', 1907, 'Amarelo e Azul Marinho', 30, 'Domenico Tedesco', 'Sadettin Saran', 'Otokoç', 'Adidas', 45, 'Canário', 'Şükrü Saracoğlu', 'Europa', 'Turquia', 'Istambul', 'Süper Lig');
+INSERT INTO TIMES VALUES('Watford', 'WAT', 1881, 'Amarelo e Vermelho', 30, 'Tom Cleverley', 'Scott Duxbury', 'Stake', 'Kelme', 5, 'Hornet', 'Vicarage Road', 'Europa', 'Inglaterra', 'Watford', 'Championship');
+INSERT INTO TIMES VALUES('Everton', 'EVE', 1878, 'Azul e Branco', 28, 'Sean Dyche', 'Bill Kenwright', 'Stake', 'Castore', 24, 'Toffee Lady', 'Goodison Park', 'Europa', 'Inglaterra', 'Liverpool', 'Premier League');
+INSERT INTO TIMES VALUES('Tottenham', 'TOT', 1882, 'Branco e Azul Marinho', 28, 'Thomas Frank', 'Peter Charrington', 'AIA', 'Nike', 24, 'Cockerel', 'Tottenham Hotspur Stadium', 'Europa', 'Inglaterra', 'Londres', 'Premier League');
+INSERT INTO TIMES VALUES('Newcastle', 'NEW', 1892, 'Preto e Branco', 28, 'Eddie Howe', 'Yasir Al-Rumayyan', 'Sela', 'Adidas', 19, 'Magpies', 'St James Park', 'Europa', 'Inglaterra', 'Newcastle', 'Premier League');
+INSERT INTO TIMES VALUES('Juventus', 'JUV', 1897, 'Preto e Branco', 28, 'Luciano Spalletti', 'Gianluca Ferrero', 'Jeep', 'Adidas', 70, 'Zebra', 'Allianz Stadium', 'Europa', 'Itália', 'Turim', 'Serie A');
+INSERT INTO TIMES VALUES('Roma', 'ROM', 1927, 'Amarelo Ouro e Vermelho Púrpura', 28, 'Gian Piero Gasperini', 'Dan Friedkin', 'Auberge Resorts', 'Adidas', 20, 'Lupa Capitolina', 'Olímpico de Roma', 'Europa', 'Itália', 'Roma', 'Serie A');
+INSERT INTO TIMES VALUES('Napoli', 'NAP', 1926, 'Azul Celeste', 28, 'Antonio Conte', 'Aurelio De Laurentiis', 'MSC Crociere', 'EA7', 18, 'Burro', 'Diego Armando Maradona', 'Europa', 'Itália', 'Nápoles', 'Serie A');
+INSERT INTO TIMES VALUES('Girona', 'GIR', 1930, 'Vermelho e Branco', 28, 'Míchel', 'Pere Guardiola', 'Gosbi', 'Puma', 2, 'Leão', 'Montilivi', 'Europa', 'Espanha', 'Girona', 'La Liga');
+INSERT INTO TIMES VALUES('Monaco', 'MON', 1924, 'Vermelho e Branco', 28, 'Adi Hütter', 'Dmitry Rybolovlev', 'Fedcom', 'Kappa', 22, 'Príncipe', 'Louis II', 'Europa', 'Mônaco', 'Mônaco', 'Ligue 1');
+INSERT INTO TIMES VALUES('Atalanta B.C.', 'ATA', 1907, 'Preto e Azul', 28, 'Gian Piero Gasperini', 'Antonio Percassi', 'Plus500', 'Joma', 11, 'Deusa', 'Gewiss Stadium', 'Europa', 'Itália', 'Bérgamo', 'Serie A');
+INSERT INTO TIMES VALUES('Athletic Bilbao', 'BIL', 1898, 'Vermelho e Branco', 28, 'Ernesto Valverde', 'Jon Uriarte', 'Kutxabank', 'New Balance', 35, 'Leão', 'San Mamés', 'Europa', 'Espanha', 'Bilbau', 'La Liga');
+INSERT INTO TIMES VALUES('Basel', 'BAS', 1893, 'Vermelho e Azul', 28, 'Fabio Celestini', 'Bernhard Burgener', 'Sunrise', 'Adidas', 30, 'Basilisco', 'St. Jakob-Park', 'Europa', 'Suíça', 'Basileia', 'Super League');
+INSERT INTO TIMES VALUES('Malmö FF', 'MFF', 1910, 'Azul Celeste', 30, 'Henrik Rydström', 'Anders Pålsson', 'Volkswagen', 'Puma', 35, 'Gyllene', 'Eleda Stadion', 'Europa', 'Suécia', 'Malmö', 'Allsvenskan');
+INSERT INTO TIMES VALUES('Olympique de Marseille', 'MAR', 1899, 'Branco e Azul Celeste', 28, 'Jean-Louis Gasset', 'Pablo Longoria', 'CMA CGM', 'Puma', 30, 'Dogue', 'Vélodrome', 'Europa', 'França', 'Marselha', 'Ligue 1');
+INSERT INTO TIMES VALUES('Lyon', 'LYO', 1950, 'Branco, Azul e Vermelho', 28, 'Pierre Sage', 'John Textor', 'Emirates', 'Adidas', 25, 'Gones', 'Groupama Stadium', 'Europa', 'França', 'Lyon', 'Ligue 1');
+INSERT INTO TIMES VALUES('Olympiacos', 'OLY', 1925, 'Vermelho e Branco', 30, 'José Mendilibar', 'Evangelos Marinakis', 'Stoiximan', 'Adidas', 78, 'Lenda', 'Georgios Karaiskakis', 'Europa', 'Grécia', 'Pireu', 'Super League Grega');
+INSERT INTO TIMES VALUES('Celtic', 'CEL', 1887, 'Alviverde (Listrado)', 28, 'Brendan Rodgers', 'Michael Nicholson', 'Dafabet', 'Adidas', 115, 'Menino', 'Celtic Park', 'Europa', 'Escócia', 'Glasgow', 'Premiership Escocesa');
+INSERT INTO TIMES VALUES('Rangers.', 'RAN', 1872, 'Azul Real', 28, 'Philippe Clement', 'John Bennett', 'Unibet', 'Castore', 116, 'Urso Teddy', 'Ibrox Stadium', 'Europa', 'Escócia', 'Glasgow', 'Premiership Escocesa');
+INSERT INTO TIMES VALUES('Legia Warszawa', 'LEG', 1916, 'Tricolor', 28, 'Iñaki Astiz', 'Dariusz Mioduski', 'Plus500', 'Adidas', 43, 'Urso', 'Wojska Polskiego', 'Europa', 'Polônia', 'Varsóvia', 'Ekstraklasa');
+INSERT INTO TIMES VALUES('Nice', 'NICE', 1904, 'Vermelho e Preto', 28, 'Franck Haise', 'Jim Ratcliffe (INEOS)', 'Ineos', 'Le Coq Sportif', 12, 'Aiglon', 'Allianz Riviera', 'Europa', 'França', 'Nice', 'Ligue 1');
+INSERT INTO TIMES VALUES('Shakhtar Donetsk', 'SHK', 1936, 'Laranja e Preto', 28, 'Marino Pušić', 'Rinat Akhmetov', 'Parimatch', 'Puma', 51, 'Toptyzhka (Urso)', 'Arena Lviv', 'Europa', 'Ucrânia', 'Donetsk', 'Premier League Ucraniana');
+INSERT INTO TIMES VALUES('Leeds United', 'LEE', 1919, 'Branco, Azul e Amarelo', 28, 'Daniel Farke', 'Paraag Marathe', 'BOXT', 'Adidas', 9, 'Lucas The Kookaburra', 'Elland Road', 'Europa', 'Inglaterra', 'Leeds', 'EFL Championship');
+INSERT INTO TIMES VALUES('Dynamo de Kiev', 'DYK', 1927, 'Azul e Branco', 28, 'Oleksandr Shovkovskyi', 'Ihor Surkis', 'Adidas', 'New Balance', 67, 'Um Castor', 'Estádio Olímpico de Kiev', 'Europa', 'Ucrânia', 'Kiev', 'Premier League Ucraniana');
+INSERT INTO TIMES VALUES('Brentford', 'BRE', 1889, 'Vermelho e Branco', 28, 'Thomas Frank', 'Matthew Benham', 'Hollywoodbets', 'Umbro', 5, 'Buzz Bee', 'Brentford Community Stadium', 'Europa', 'Inglaterra', 'Londres', 'Premier League');
+INSERT INTO TIMES VALUES('Aston Villa', 'AVL', 1874, 'Bordô e Azul Claro', 28, 'Unai Emery', 'Nassef Sawiris', 'BK8', 'Adidas', 25, 'Hercules The Lion', 'Villa Park', 'Europa', 'Inglaterra', 'Birmingham', 'Premier League');
+INSERT INTO TIMES VALUES('Sunderland', 'SUN', 1879, 'Vermelho e Branco', 28, 'Mike Dodds', 'Kyril Louis-Dreyfus', 'Hummel', 'Nike', 15, 'Samson the Cat', 'Stadium of Light', 'Europa', 'Inglaterra', 'Sunderland', 'EFL Championship');
+INSERT INTO TIMES VALUES('Ferencváros', 'FTC', 1899, 'Alviverde', 30, 'Pascal Jansen', 'Gábor Kubatov', 'MBH Bank', 'Nike', 48, 'Feri, o Águia', 'Groupama Arena', 'Europa', 'Hungria', 'Budapeste', 'Nemzeti Bajnokság I');
+INSERT INTO TIMES VALUES('MTK FC', 'MTK', 1888, 'Azul e Branco', 30, 'Tamás Feczkó', 'Tamás Deutsch', 'Valton Security', 'Nike', 36, 'Leão', 'Hidegkuti Nándor Stadion', 'Europa', 'Hungria', 'Budapeste', 'Nemzeti Bajnokság I');
+INSERT INTO TIMES VALUES('Budapest Honvéd', 'HON', 1909, 'Vermelho e Preto', 30, 'Attila Simon', 'George Hemingway', 'Szerencsejáték Zrt', 'Macron', 21, 'Soldado', 'Bozsik Aréna', 'Europa', 'Hungria', 'Budapeste', 'Nemzeti Bajnokság II');
+INSERT INTO TIMES VALUES('Fulham', 'FUL', 1879, 'Branco e Preto', 28, 'Marco Silva', 'Shahid Khan', 'SBOTOP', 'Adidas', 1, 'Billy The Badger', 'Craven Cottage', 'Europa', 'Inglaterra', 'Londres', 'Premier League');
+INSERT INTO TIMES VALUES('West Ham', 'WHU', 1895, 'Bordô e Azul Claro', 28, 'Julen Lopetegui', 'David Sullivan', 'Betway', 'Umbro', 10, 'Hammerhead', 'London Stadium', 'Europa', 'Inglaterra', 'Londres', 'Premier League');
+INSERT INTO TIMES VALUES('Wolverhampton Wanderers', 'WOL', 1877, 'Ouro e Preto', 28, 'Gary ONeil', 'Jeff Shi', 'AstroPay', 'Castore', 31, 'Wolfie', 'Molineux Stadium', 'Europa', 'Inglaterra', 'Wolverhampton', 'Premier League');
+INSERT INTO TIMES VALUES('Feyenoord', 'FEY', 1908, 'Vermelho e Branco', 28, 'Brian Priske', 'Dennis te Kloese', 'MediaMarkt', 'Adidas', 35, 'Coentje', 'De Kuip', 'Europa', 'Holanda', 'Roterdã', 'Eredivisie');
+INSERT INTO TIMES VALUES('Borussia Mönchengladbach', 'BMG', 1900, 'Preto, Branco e Verde', 28, 'Gerardo Seoane', 'Rolf Königs', 'flatex', 'Puma', 14, 'Jünter', 'Borussia-Park', 'Europa', 'Alemanha', 'Mönchengladbach', 'Bundesliga');
+INSERT INTO TIMES VALUES('Club Brugge', 'CLB', 1891, 'Azul e Preto', 28, 'Nicky Hayen', 'Bart Verhaeghe', 'Unibet', 'Macron', 33, 'Berna de Beer', 'Jan Breydel Stadium', 'Europa', 'Bélgica', 'Brugge', 'Jupiler Pro League');
+INSERT INTO TIMES VALUES('Sporting Club Bastiais', 'SCB', 1905, 'Azul e Branco', 28, 'Benoît Tavenot', 'Claude Ferrandi', 'Air Corsica', 'Adidas', 2, 'Grizzly', 'Stade Armand Cesari', 'Europa', 'França', 'Bastia', 'Ligue 2');
+INSERT INTO TIMES VALUES('Estrela Vermelha', 'CRV', 1945, 'Vermelho e Branco', 30, 'Vladan Milojević', 'Svetozar Mijailović', 'Gazprom', 'Puma', 65, 'Um Leão', 'Marakana', 'Europa', 'Sérvia', 'Belgrado', 'Superliga Sérvia');
+INSERT INTO TIMES VALUES('Eintracht Frankfurt', 'SGE', 1899, 'Preto, Vermelho e Branco', 28, 'Dino Toppmöller', 'Axel Hellmann', 'Indeed', 'Nike', 10, 'Attila (Águia)', 'Deutsche Bank Park', 'Europa', 'Alemanha', 'Frankfurt', 'Bundesliga');
+INSERT INTO TIMES VALUES('Hamburgo SV', 'HSV', 1887, 'Azul, Branco e Preto', 28, 'Steffen Baumgart', 'Marcell Jansen', 'Orthomol', 'Adidas', 22, 'Dino Hermann', 'Volksparkstadion', 'Europa', 'Alemanha', 'Hamburgo', '2. Bundesliga');
+INSERT INTO TIMES VALUES('IFK Göteborg', 'IFK', 1904, 'Azul e Branco', 28, 'Stefan Jacobsson', 'Richard Berkling', 'Prioritet Finans', 'Adidas', 25, 'Vitinho (Vitinho)', 'Gamla Ullevi', 'Europa', 'Suécia', 'Gotemburgo', 'Allsvenskan');
+INSERT INTO TIMES VALUES('AEK Atenas', 'AEK', 1924, 'Amarelo e Preto', 30, 'Matías Almeyda', 'Evangelos Aslanidis', 'Stoiximan', 'Nike', 31, 'Dikefalos Aetos (Águia de Duas Cabeças)', 'Agia Sophia Stadium', 'Europa', 'Grécia', 'Atenas', 'Superliga Grega');
+INSERT INTO TIMES VALUES('FC Köln', 'COL', 1948, 'Branco e Vermelho', 28, 'Gerhard Struber', 'Werner Wolf', 'Rewe', 'Hummel', 7, 'Hennes VIII (Bode)', 'RheinEnergieStadion', 'Europa', 'Alemanha', 'Colônia', '2. Bundesliga');
+INSERT INTO TIMES VALUES('RB Leipzig', 'RBL', 2009, 'Branco e Vermelho', 28, 'Marco Rose', 'Oliver Mintzlaff', 'Red Bull', 'Nike', 5, 'Buli (Touro)', 'Red Bull Arena', 'Europa', 'Alemanha', 'Leipzig', 'Bundesliga');
+INSERT INTO TIMES VALUES('VfB Stuttgart', 'VFB', 1893, 'Branco e Vermelho', 28, 'Sebastian Hoeneß', 'Claus Vogt', 'Porsche', 'Puma', 13, 'Fritzle', 'MHPArena', 'Europa', 'Alemanha', 'Stuttgart', 'Bundesliga');
+INSERT INTO TIMES VALUES('RSC Anderlecht', 'AND', 1908, 'Roxo e Branco', 28, 'Brian Riemer', 'Wouter Vandenhaute', 'Dewaele', 'Joma', 44, 'Mauves', 'Lotto Park', 'Europa', 'Bélgica', 'Anderlecht', 'Jupiler Pro League');
+INSERT INTO TIMES VALUES('Werder Bremen', 'SVW', 1899, 'Alviverde', 28, 'Ole Werner', 'Hubertus Hess-Grunewald', 'Wiesenhof', 'Hummel', 14, 'Werderino', 'Weserstadion', 'Europa', 'Alemanha', 'Bremen', 'Bundesliga');
+INSERT INTO TIMES VALUES('Torino FC', 'TOR', 1906, 'Bordô', 28, 'Paolo Vanoli', 'Urbano Cairo', 'Suzuki', 'Joma', 12, 'Toro', 'Stadio Olimpico Grande Torino', 'Europa', 'Itália', 'Turim', 'Serie A');
+INSERT INTO TIMES VALUES('Red Bull Salzburg', 'RBS', 1933, 'Vermelho e Branco', 28, 'Pepijn Lijnders', 'Stephan Reiter', 'Red Bull', 'Nike', 28, 'Superbulle', 'Red Bull Arena', 'Europa', 'Áustria', 'Salzburgo', 'Austrian Bundesliga');
+INSERT INTO TIMES VALUES('Schalke 04', 'S04', 1904, 'Azul e Branco', 28, 'Karel Geraerts', 'Matthias Tillmann', 'Veltins', 'Adidas', 17, 'Erwin', 'Veltins-Arena', 'Europa', 'Alemanha', 'Gelsenkirchen', '2. Bundesliga');
+INSERT INTO TIMES VALUES('Slavia Praga', 'SLA', 1892, 'Vermelho e Branco', 28, 'Jindřich Trpišovský', 'Jaroslav Tvrdík', 'Generali Česká', 'Puma', 27, 'Um Leão', 'Fortuna Arena', 'Europa', 'República Tcheca', 'Praga', 'Primeira Liga Tcheca');
+INSERT INTO TIMES VALUES('Cagliari Calcio', 'CAG', 1920, 'Azul e Vermelho', 28, 'Davide Nicola', 'Tommaso Giulini', 'Moby', 'Adidas', 2, 'Gigi Riva', 'Stadio SantElia', 'Europa', 'Itália', 'Cagliari', 'Serie A');
+INSERT INTO TIMES VALUES('Spartak Moscou', 'SPM', 1922, 'Vermelho e Branco', 30, 'Dejan Stanković', 'Shamil Gazizov', 'Lukoil', 'Nike', 40, 'Gladiador', 'Otkrytie Arena', 'Europa', 'Rússia', 'Moscou', 'Premier League Russa');
+INSERT INTO TIMES VALUES('Lazio', 'LAZ', 1900, 'Branco e Azul Celeste', 28, 'Marco Baroni', 'Claudio Lotito', 'Mizuno', 'Mizuno', 16, 'Olympia (Águia)', 'Stadio Olimpico', 'Europa', 'Itália', 'Roma', 'Serie A');
+INSERT INTO TIMES VALUES('Fiorentina', 'FIO', 1926, 'Roxo e Branco', 28, 'Raffaele Palladino', 'Rocco Commisso', 'Mediacom', 'Kappa', 14, 'Giglio', 'Stadio Artemio Franchi', 'Europa', 'Itália', 'Florença', 'Serie A');
+INSERT INTO TIMES VALUES('Bodø/Glimt', 'BOD', 1916, 'Amarelo', 28, 'Kjetil Knutsen', 'Wenche Skjæggestad', 'SpareBank 1 Nord-Norge', 'Nike', 7, 'Um Urso', 'Aspmyra Stadion', 'Europa', 'Noruega', 'Bodø', 'Eliteserien');
+INSERT INTO TIMES VALUES('Atalanta', 'ATA', 1907, 'Azul e Preto', 28, 'Gian Piero Gasperini', 'Antonio Percassi', 'Plus500', 'Joma', 3, 'La Dea', 'Gewiss Stadium', 'Europa', 'Itália', 'Bérgamo', 'Serie A');
+INSERT INTO TIMES VALUES('Hibernian FC', 'HIB', 1875, 'Alviverde', 28, 'David Gray', 'Ronald Gordon', 'Carrick Packaging', 'Puma', 10, 'Sunshine The Leith Lynx', 'Easter Road', 'Europa', 'Escócia', 'Edimburgo', 'Scottish Premiership');
+INSERT INTO TIMES VALUES('CSKA Sofia', 'CSK', 1948, 'Vermelho e Branco', 30, 'Stamen Belchev', 'Dimitar Penev', 'Mtel', 'Adidas', 48, 'Exército', 'Estádio Balgarska Armia', 'Europa', 'Bulgária', 'Sófia', 'Primeira Liga Búlgara');
+INSERT INTO TIMES VALUES('Panathinaikos', 'PAO', 1908, 'Alviverde', 30, 'Diego Alonso', 'Giannis Alafouzos', 'Pame Stoixima', 'Adidas', 40, 'O Trevo', 'Apostolos Nikolaidis Stadium', 'Europa', 'Grécia', 'Atenas', 'Superliga Grega');
+INSERT INTO TIMES VALUES('Saint-Étienne', 'STE', 1919, 'Alviverde', 28, 'Olivier DallOglio', 'Bernard Caïazzo', 'Aésio Mutuelle', 'Hummel', 18, 'O Leão', 'Stade Geoffroy-Guichard', 'Europa', 'França', 'Saint-Étienne', 'Ligue 1');
+INSERT INTO TIMES VALUES('FC Zürich', 'FCZ', 1896, 'Azul e Branco', 28, 'Ricardo Moniz', 'Ancillo Canepa', 'Swiss Life', 'Nike', 20, 'O Leão', 'Letzigrund', 'Europa', 'Suíça', 'Zurique', 'Super Liga Suíça');
+INSERT INTO TIMES VALUES('Malmö FF', 'MFF', 1910, 'Azul Claro', 28, 'Henrik Rydström', 'Anders Pålsson', 'PUMA', 'Puma', 36, 'Himmelriket', 'Eleda Stadion', 'Europa', 'Suécia', 'Malmö', 'Allsvenskan');
+INSERT INTO TIMES VALUES('Nottingham Forest', 'NFO', 1865, 'Vermelho e Branco', 28, 'Nuno Espírito Santo', 'Evangelos Marinakis', 'BetKing', 'Adidas', 11, 'Sherwood The Bear', 'The City Ground', 'Europa', 'Inglaterra', 'Nottingham', 'Premier League');
+INSERT INTO TIMES VALUES('Steaua Bucareste', 'FCSB', 1947, 'Vermelho, Amarelo e Azul', 30, 'Elias Charalambous', 'George Becali', 'Betano', 'Nike', 58, 'Militari', 'Arena Nacional', 'Europa', 'Romênia', 'Bucareste', 'Liga I');
+INSERT INTO TIMES VALUES('IFK Göteborg', 'IFK', 1904, 'Azul e Branco', 28, 'Stefan Jacobsson', 'Richard Berkling', 'Prioritet Finans', 'Adidas', 25, 'Vitinho (Vitinho)', 'Gamla Ullevi', 'Europa', 'Suécia', 'Gotemburgo', 'Allsvenskan');
+INSERT INTO TIMES VALUES('Dundee United', 'DUN', 1909, 'Laranja e Preto', 28, 'Jim Goodwin', 'Mark Ogren', 'QuinnBet', 'Macron', 5, 'Arab The Tangerine', 'Tannadice Park', 'Europa', 'Escócia', 'Dundee', 'Scottish Championship');
+INSERT INTO TIMES VALUES('Levante UD', 'LEV', 1909, 'Vermelho e Azul', 28, 'Felipe Miñambres', 'Pablo Sánchez', 'GDES', 'Macron', 3, 'Granota', 'Estadio Ciutat de València', 'Europa', 'Espanha', 'Valência', 'La Liga 2');
+INSERT INTO TIMES VALUES('Getafe CF', 'GET', 1946, 'Azul Escuro', 28, 'José Bordalás', 'Ángel Torres', 'Tecnocasa', 'Joma', 0, 'Azulones', 'Coliseum Alfonso Pérez', 'Europa', 'Espanha', 'Getafe', 'La Liga');
+INSERT INTO TIMES VALUES('Celta de Vigo', 'CEL', 1923, 'Azul Celeste e Branco', 28, 'Claudio Giráldez', 'Marian Mouriño', 'Estrella Galicia', 'Adidas', 1, 'Celeste', 'Balaídos', 'Europa', 'Espanha', 'Vigo', 'La Liga');
+INSERT INTO TIMES VALUES('Dinamo Zagreb', 'DZG', 1945, 'Azul Escuro', 28, 'Sergej Jakirović', 'Velimir Zajec', 'SuperSport', 'Adidas', 48, 'Modri', 'Maksimir', 'Europa', 'Croácia', 'Zagreb', 'HNL');
+INSERT INTO TIMES VALUES('Hajduk Split', 'HSPL', 1911, 'Branco e Azul', 28, 'Gennaro Gattuso', 'Ivan Bilić', 'Tommy', 'Macron', 25, 'Bili', 'Poljud', 'Europa', 'Croácia', 'Split', 'HNL');
+INSERT INTO TIMES VALUES('Real Sociedad', 'RSO', 1909, 'Azul e Branco', 28, 'Imanol Alguacil', 'Jokin Aperribay', 'Cazoo', 'Macron', 10, 'Txuri-urdin', 'Anoeta Stadium', 'Europa', 'Espanha', 'San Sebastián', 'La Liga');
+INSERT INTO TIMES VALUES('Boca Juniors', 'BOC', 1905, 'Azul e Ouro', 30, 'Diego Martínez', 'Juan Román Riquelme', 'Binance', 'Adidas', 74, 'Xeneize', 'La Bombonera', 'América do Sul', 'Argentina', 'Buenos Aires', 'Liga Profissional');
+INSERT INTO TIMES VALUES('River Plate', 'RIV', 1901, 'Branco c/ faixa vermelha', 30, 'Martín Demichelis', 'Jorge Brito', 'Codere', 'Adidas', 75, 'Galinha', 'Monumental', 'América do Sul', 'Argentina', 'Buenos Aires', 'Liga Profissional');
+INSERT INTO TIMES VALUES('Racing', 'RAC', 1903, 'Branco e Azul Celeste', 30, 'Gustavo Costas', 'Víctor Blanco', 'Banco Ciudad', 'Puma', 38, 'Academia', 'El Cilindro', 'América do Sul', 'Argentina', 'Avellaneda', 'Liga Profissional');
+INSERT INTO TIMES VALUES('Lanús', 'LAN', 1915, 'Grená e Branco', 30, 'Ricardo Zielinski', 'Luis María Chebel', 'BBVA', 'Umbro', 8, 'Granate', 'La Fortaleza', 'América do Sul', 'Argentina', 'Lanús', 'Liga Profissional');
+INSERT INTO TIMES VALUES('América Mineiro', 'AME', 1915, 'Verde e Preto', 35, 'Cauan de Almeida', 'Alencar da Silveira Jr', 'Pixbet', 'Volt', 30, 'Coelho', 'Independência', 'América do Sul', 'Brasil', 'Belo Horizonte', 'Série A');
+INSERT INTO TIMES VALUES('Internacional', 'INT', 1909, 'Vermelho', 35, 'Abel Braga', 'Alessandro Barcellos', 'Banrisul', 'Adidas', 55, 'Saci', 'Beira-Rio', 'América do Sul', 'Brasil', 'Porto Alegre', 'Série A');
+INSERT INTO TIMES VALUES('Caxias', 'CAX', 1935, 'Grená e Branco', 30, 'Argel Fuchs', 'Paulo César Mandes', 'Serra FC', 'Duda', 15, 'Falcão', 'Centenário', 'América do Sul', 'Brasil', 'Caxias do Sul', 'Série C');
+INSERT INTO TIMES VALUES('Corinthians', 'COR', 1910, 'Preto e Branco', 35, 'António Oliveira', 'Augusto Melo', 'VaideBet', 'Nike', 45, 'Mosqueteiro', 'Neo Química Arena', 'América do Sul', 'Brasil', 'São Paulo', 'Série A');
+INSERT INTO TIMES VALUES('Mirassol', 'MIR', 1925, 'Amarelo e Verde', 30, 'Rafael Guanaes', 'Edson Antonio Ermenegildo', 'Sicredi', 'Volt', 10, 'Leão', 'Maião', 'América do Sul', 'Brasil', 'Mirassol', 'Série B');
+INSERT INTO TIMES VALUES('Portuguesa', 'POR', 1920, 'Verde e Vermelho', 30, 'Alan Dotti', 'Antonio Carlos Castanheira', 'Buser', '10F', 15, 'Leão', 'Canindé', 'América do Sul', 'Brasil', 'São Paulo', 'Paulistão');
+INSERT INTO TIMES VALUES('Sport Recife', 'SPT', 1905, 'Preto e Vermelho', 35, 'Mariano Soso', 'Yuri Romão', 'Betnacional', 'Umbro', 45, 'Leão', 'Ilha do Retiro', 'América do Sul', 'Brasil', 'Recife', 'Série B');
+INSERT INTO TIMES VALUES('Santa Cruz', 'SFC', 1914, 'Tricolor', 30, 'Itamar Schülle', 'Jairo Rocha', 'Betnacional', 'Volt', 45, 'Cobra Coral', 'Arruda', 'América do Sul', 'Brasil', 'Recife', 'Série D');
+INSERT INTO TIMES VALUES('Náutico', 'NAU', 1901, 'Vermelho e Branco', 30, 'Mazola Júnior', 'Bruno Becker', 'Bet Nacional', 'Diadora', 40, 'Timbu', 'Aflitos', 'América do Sul', 'Brasil', 'Recife', 'Série C');
+INSERT INTO TIMES VALUES('Joinville', 'JEC', 1976, 'Tricolor', 30, 'Jersinho Testa', 'Vilfred Schapitz', 'Univille', 'Embratex', 20, 'Coelho', 'Arena Joinville', 'América do Sul', 'Brasil', 'Joinville', 'Catarinense');
+INSERT INTO TIMES VALUES('Hercílio Luz', 'FLN', 1918, 'Alvirubro', 20, 'Paulo Baier', 'Vinícius Gaidzinski', 'Strawplast', 'Weefe', 2, 'Leão', 'Aníbal Torres Costa', 'América do Sul', 'Brasil', 'Santa Catarina', 'Estadual');
+INSERT INTO TIMES VALUES('Peñarol', 'CAP', 1891, 'Amarelo e Preto', 35, 'Diego Aguirre', 'Ignacio Ruglio', 'Antel', 'Puma', 62, 'Carbonero', 'Campeón del Siglo', 'América do Sul', 'Uruguai', 'Montevidéu', 'Primera División');
+INSERT INTO TIMES VALUES('Independiente', 'CAI', 1905, 'Vermelho e Branco', 35, 'Julio Vaccari', 'Néstor Grindetti', 'Banco Provincia', 'Puma', 45, 'Diablo', 'Libertadores de América', 'América do Sul', 'Argentina', 'Avellaneda', 'Primera División');
+INSERT INTO TIMES VALUES('Olimpia', 'OLI', 1902, 'Preto e Branco', 35, 'Martín Palermo', 'Miguel Cardona', 'Tigo', 'Nike', 46, 'El Decano', 'Estádio Manuel Ferreira', 'América do Sul', 'Paraguai', 'Assunção', 'Divisão Profissional');
+INSERT INTO TIMES VALUES('Nacional', 'NAC', 1899, 'Azul, Branco e Vermelho', 35, 'Álvaro Recoba', 'José Decurnex', 'Antel', 'Umbro', 50, 'El Bolso', 'Gran Parque Central', 'América do Sul', 'Uruguai', 'Montevidéu', 'Primera División');
+INSERT INTO TIMES VALUES('Estudiantes de la Plata', 'EDL', 1905, 'Vermelho e Branco', 35, 'Eduardo Domínguez', 'Martín Gorostegui', 'Banco Ciudad', 'Umbro', 16, 'El León', 'Estadio Jorge Luis Hirschi', 'América do Sul', 'Argentina', 'La Plata', 'Primera División');
+INSERT INTO TIMES VALUES('Universitario de Deportes', 'UDA', 1924, 'Creme e Bordô', 35, 'Fabián Bustos', 'Jean Ferrari', 'Cerveza Cristal', 'Marathon', 28, 'Garra Crema', 'Estadio Monumental', 'América do Sul', 'Peru', 'Lima', 'Liga 1');
+INSERT INTO TIMES VALUES('Colo-Colo', 'CC', 1925, 'Preto e Branco', 35, 'Jorge Almirón', 'Alfredo Stöhwing', 'Coolbet', 'Adidas', 35, 'Cacique', 'Estadio Monumental David Arellano', 'América do Sul', 'Chile', 'Santiago', 'Primera División Chilena');
+INSERT INTO TIMES VALUES('Unión Española', 'UES', 1897, 'Vermelho e Amarelo', 35, 'Ronald Fuentes', 'Jorge Segovia', 'Claro', 'Kappa', 14, 'Hispanos', 'Estadio Santa Laura', 'América do Sul', 'Chile', 'Santiago', 'Primera División Chilena');
+INSERT INTO TIMES VALUES('Deportivo Cali', 'DCA', 1912, 'Alviverde', 35, 'Hernán Torres', 'Guido Jaramillo', 'Coopserp', 'Umbro', 13, 'El Azucarero', 'Estadio Deportivo Cali', 'América do Sul', 'Colômbia', 'Cali', 'Categoria Primera A');
+INSERT INTO TIMES VALUES('Cobreloa', 'COB', 1977, 'Laranja', 35, 'Dalcio Giovagnoli', 'Fernando Ramírez', 'SQM', 'KS7', 11, 'Zorro do Deserto', 'Estadio Zorros del Desierto', 'América do Sul', 'Chile', 'Calama', 'Primera División Chilena');
+INSERT INTO TIMES VALUES('Argentinos Juniors', 'AJR', 1904, 'Vermelho e Branco', 35, 'Pablo Guede', 'Cristian Malaspina', 'Banco Ciudad', 'Adidas', 9, 'El Bicho', 'Estadio Diego Armando Maradona', 'América do Sul', 'Argentina', 'Buenos Aires', 'Primera División');
+INSERT INTO TIMES VALUES('América de Cali', 'AME', 1927, 'Vermelho', 35, 'César Farías', 'Marcela Gómez', 'BetPlay', 'Umbro', 17, 'Diablos Rojos', 'Estadio Pascual Guerrero', 'América do Sul', 'Colômbia', 'Cali', 'Categoria Primera A');
+INSERT INTO TIMES VALUES('Newells Old Boys', 'NOB', 1903, 'Preto e Vermelho', 35, 'Mauricio Larriera', 'Ignacio Astore', 'Banco Macro', 'Adidas', 9, 'Leprosos', 'Estadio Marcelo Bielsa', 'América do Sul', 'Argentina', 'Rosário', 'Primera División');
+INSERT INTO TIMES VALUES('Barcelona SC', 'BSC', 1925, 'Amarelo e Preto', 35, 'Ariel Holan', 'Antonio Álvarez', 'Pilsener', 'Marathon', 18, 'Ídolo do Equador', 'Estadio Monumental Isidro Romero Carbo', 'América do Sul', 'Equador', 'Guayaquil', 'Serie A do Equador');
+INSERT INTO TIMES VALUES('Universidad Católica', 'UC', 1937, 'Azul e Branco', 35, 'Tiago Nunes', 'Juan Tagle', 'Betsson', 'Puma', 21, 'Cruzados', 'Estadio San Carlos de Apoquindo', 'América do Sul', 'Chile', 'Santiago', 'Primera División Chilena');
+INSERT INTO TIMES VALUES('Vélez Sarsfield', 'VEL', 1910, 'Branco e Azul', 35, 'Gustavo Quinteros', 'Fabián Berlanga', 'Hitachi', 'Kappa', 16, 'El Fortín', 'Estadio José Amalfitani', 'América do Sul', 'Argentina', 'Buenos Aires', 'Primera División');
+INSERT INTO TIMES VALUES('Atlético Nacional', 'ATN', 1947, 'Alviverde', 35, 'Pablo Repetto', 'Benjamín Romero', 'BetPlay', 'Nike', 31, 'El Verdolaga', 'Estadio Atanasio Girardot', 'América do Sul', 'Colômbia', 'Medellín', 'Categoria Primera A');
+INSERT INTO TIMES VALUES('Sporting Cristal', 'SCR', 1955, 'Azul Claro', 35, 'Enderson Moreira', 'Joel Raffo', 'Florida', 'Adidas', 25, 'Cerveceros', 'Estadio Alberto Gallardo', 'América do Sul', 'Peru', 'Lima', 'Liga 1');
+INSERT INTO TIMES VALUES('LDU Quito', 'LDU', 1930, 'Branco', 35, 'Adrián Gabbarini', 'Patricio Torres', 'Banco de Guayaquil', 'Puma', 17, 'Albos', 'Estadio Rodrigo Paz Delgado', 'América do Sul', 'Equador', 'Quito', 'Serie A do Equador');
+INSERT INTO TIMES VALUES('Independiente del Valle', 'IDV', 1958, 'Azul e Preto', 35, 'Javier Gandolfi', 'Franklin Tello', 'Banco Guayaquil', 'Marathon', 8, 'Los Rayados', 'Estadio Banco Guayaquil', 'América do Sul', 'Equador', 'Quito', 'Serie A do Equador');
+INSERT INTO TIMES VALUES('Athletico Paranaense', 'CAP', 1924, 'Preto e Vermelho', 35, 'Odair Helmann', 'Mario Celso Petraglia', 'Pixbet', 'Umbro', 10, 'Furacão', 'Arena da Baixada', 'América do Sul', 'Brasil', 'Curitiba', 'Série B');
+INSERT INTO TIMES VALUES('Madureira EC', 'MAD', 1914, 'Tricolor Suburbano', 35, 'Daniel Nery', 'Elias Duba', 'Supermercados Guanabara', 'Numer', 2, 'Madura', 'Estádio Conselheiro Galvão', 'América do Sul', 'Brasil', 'Rio de Janeiro', 'Série D');
+INSERT INTO TIMES VALUES('Bolívar', 'BOL', 1925, 'Azul Claro e Branco', 35, 'Flavio Robatto', 'Marcelo Claure', 'Multicenter', 'Puma', 50, 'Acadêmico', 'Estadio Hernando Siles', 'América do Sul', 'Bolívia', 'La Paz', 'División Profesional');
+INSERT INTO TIMES VALUES('The Strongest', 'STR', 1908, 'Amarelo e Preto', 35, 'Ismael Rescalvo', 'Ronald Crespo', 'Tigo', 'Marathon', 33, 'El Tigre', 'Estadio Hernando Siles', 'América do Sul', 'Bolívia', 'La Paz', 'División Profesional');
+INSERT INTO TIMES VALUES('Nacional Potosí', 'NPO', 1942, 'Tricolor', 35, 'Oscar Sanz', 'Wilfredo Condori', 'Coca-Cola', 'Walon', 0, 'La Banda Roja', 'Estadio Víctor Agustín Ugarte', 'América do Sul', 'Bolívia', 'Potosí', 'División Profesional');
+INSERT INTO TIMES VALUES('Jorge Wilstermann', 'WIL', 1949, 'Vermelho e Azul', 35, 'Cristian Díaz', 'Omar Mustafá', 'VIVA', 'Joma', 15, 'Aviador', 'Estadio Félix Capriles', 'América do Sul', 'Bolívia', 'Cochabamba', 'División Profesional');
+INSERT INTO TIMES VALUES('Independiente Petrolero', 'IPE', 1932, 'Vermelho e Branco', 35, 'Marcelo Ponce', 'Jenny Salinas', 'YPFB', 'Umbro', 3, 'Matador', 'Estadio Olímpico Patria', 'América do Sul', 'Bolívia', 'Sucre', 'División Profesional');
+INSERT INTO TIMES VALUES('San Antonio Bulo Bulo', 'SAB', 2012, 'Verde e Amarelo', 35, 'Thiago Leitao', 'Hugo Eduardo', 'Cerveza Paceña', 'Marathon', 1, 'El Bulo Bulo', 'Estádio Carlos Villegas', 'América do Sul', 'Bolívia', 'Entre Ríos', 'División Profesional');
+INSERT INTO TIMES VALUES('Red Bull Bragantino', 'RBB', 1928, 'Branco e Vermelho', 35, 'Pedro Caixinha', 'Marcin Lesniewski', 'Red Bull', 'New Balance', 2, 'Massa Bruta', 'Nabi Abi Chedid', 'América do Sul', 'Brasil', 'São Paulo', 'Série A');
+INSERT INTO TIMES VALUES('Água Santa', 'AGS', 1981, 'Azul e Branco', 35, 'Fernando Marchiori', 'Paulinho Correia', 'P&G', 'Umbro', 0, 'Netuno', 'Arena Inamar', 'América do Sul', 'Brasil', 'São Paulo', 'Paulista A1');
+INSERT INTO TIMES VALUES('Mirassol FC', 'MIR', 1924, 'Amarelo e Verde', 35, 'Eduardo Baptista', 'Edson Ermenegildo', 'Eletro', 'Volt', 2, 'Leão', 'José Maria de Campos Maia', 'América do Sul', 'Brasil', 'São Paulo', 'Brasileirão');
+INSERT INTO TIMES VALUES('Inter Miami', 'MIA', 2018, 'Rosa, Preto e Branco', 30, 'Gerardo Martino', 'Jorge Mas', 'Royal Caribbean', 'Adidas', 2, 'Garça', 'Chase Stadium', 'América do Norte', 'EUA', 'Fort Lauderdale', 'MLS');
+INSERT INTO TIMES VALUES('Cruz Azul', 'CAZ', 1927, 'Azul', 35, 'Martín Anselmi', 'Víctor Velázquez', 'Cemento Cruz Azul', 'Pirma', 19, 'La Máquina', 'Estadio Ciudad de los Deportes', 'América do Norte', 'México', 'Cidade do México', 'Liga MX');
+INSERT INTO TIMES VALUES('Tigres UANL', 'TIG', 1960, 'Amarelo e Azul', 35, 'Veljko Paunović', 'Mauricio Culebro', 'Cemex', 'Adidas', 15, 'El Tigre', 'Estadio Universitario', 'América do Norte', 'México', 'Monterrey', 'Liga MX');
+INSERT INTO TIMES VALUES('Chivas Guadalajara', 'CHI', 1906, 'Tricolor', 35, 'Fernando Gago', 'Amaury Vergara', 'Caliente', 'Puma', 16, 'Rebaño Sagrado', 'Estadio Akron', 'América do Norte', 'México', 'Guadalajara', 'Liga MX');
+INSERT INTO TIMES VALUES('Atlanta United FC', 'ATL', 2014, 'Preto, Vermelho e Dourado', 28, 'Gonzalo Pineda', 'Garth Lagerwey', 'American Family Insurance', 'Adidas', 2, 'Freddie the Falcon', 'Mercedes-Benz Stadium', 'América do Norte', 'EUA', 'Atlanta', 'Major League Soccer');
+INSERT INTO TIMES VALUES('Charlotte FC', 'CHA', 2019, 'Azul, Preto e Roxo', 28, 'Dean Smith', 'David Tepper', 'Ally', 'Adidas', 0, 'Sir Minty', 'Bank of America Stadium', 'América do Norte', 'EUA', 'Charlotte', 'Major League Soccer');
+INSERT INTO TIMES VALUES('Portland Timbers', 'PTB', 1975, 'Verde e Ouro', 28, 'Phil Neville', 'Merritt Paulson', 'Alaska Airlines', 'Adidas', 2, 'Timber Joey', 'Providence Park', 'América do Norte', 'EUA', 'Portland', 'Major League Soccer');
+INSERT INTO TIMES VALUES('New York City FC', 'NYC', 2013, 'Azul Marinho e Branco', 28, 'Nick Cushing', 'Brad Sims', 'Etihad Airways', 'Adidas', 1, 'Pigeon', 'Yankee Stadium', 'América do Norte', 'EUA', 'Nova York', 'Major League Soccer');
+INSERT INTO TIMES VALUES('New York Red Bulls', 'NYR', 1994, 'Vermelho e Branco', 28, 'Sandro Schwarz', 'Marc de Grandpre', 'Red Bull', 'Adidas', 0, 'Red Bull', 'Red Bull Arena', 'América do Norte', 'EUA', 'Harrison', 'Major League Soccer');
+INSERT INTO TIMES VALUES('LA Galaxy', 'LAG', 1994, 'Branco, Azul e Ouro', 28, 'Greg Vanney', 'Chris Klein', 'Herbalife Nutrition', 'Adidas', 9, 'Cozmo', 'Dignity Health Sports Park', 'América do Norte', 'EUA', 'Carson', 'Major League Soccer');
+INSERT INTO TIMES VALUES('Los Angeles FC', 'LAFC', 2014, 'Preto e Ouro', 28, 'Steve Cherundolo', 'Larry Freedman', 'Banc of California', 'Adidas', 3, 'Feliz', 'BMO Stadium', 'América do Norte', 'EUA', 'Los Angeles', 'Major League Soccer');
+INSERT INTO TIMES VALUES('Seattle Sounders', 'SEA', 1974, 'Verde e Azul', 28, 'Brian Schmetzer', 'Adrian Hanauer', 'Zulu Alpha Kilo', 'Adidas', 6, 'Sam The Eagle', 'Lumen Field', 'América do Norte', 'EUA', 'Seattle', 'Major League Soccer');
+INSERT INTO TIMES VALUES('Atlético Ottawa', 'AOT', 2020, 'Vermelho e Preto', 28, 'Carlos González', 'Fernando López', 'TD Bank', 'Macron', 1, 'Bucky', 'TD Place Stadium', 'América do Norte', 'Canadá', 'Ottawa', 'Canadian Premier League');
+INSERT INTO TIMES VALUES('Valour FC', 'VFC', 2019, 'Bordô, Dourado e Preto', 28, 'Phillip Dos Santos', 'Wade Miller', 'Telus', 'Macron', 0, 'Valour', 'IG Field', 'América do Norte', 'Canadá', 'Winnipeg', 'Canadian Premier League');
+INSERT INTO TIMES VALUES('Al-Hilal', 'HIL', 1957, 'Azul e Branco', 30, 'Simone Inzaghi', 'Fahad bin Nafel', 'Savvy Games Group Jahez', 'Puma', 70, 'Tubarão', 'Kingdom Arena', 'Ásia', 'Arábia Saudita', 'Riade', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al-Ittihad', 'ITT', 1927, 'Amarelo e Preto', 31, 'Sergio Conceição', 'Anmar al-Haili', 'Nike', 39, 'Tigre', 'Prince Abdullah Al-Faisal Stadium', 'Ásia', 'Arábia Saudita', 'Gidá', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al Nassr FC', 'NSR', 1955, 'Amarelo e Azul', 30, 'Jorge Jesus', 'Musaed Al-Sudairy', 'STC', 'Nike', 30, 'Cavaleiros de Najd', 'Al-Awwal Park', 'Ásia', 'Arábia Saudita', 'Riade', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al Ahli SFC', 'AHLI', 1937, 'Alviverde', 30, 'Matthias Jaissle', 'Waleed Muath', 'SAB', 'Adidas', 35, 'Castelo de Taças', 'King Abdullah Sports City', 'Ásia', 'Arábia Saudita', 'Jeddah', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al Ettifaq FC', 'ETT', 1947, 'Verde e Vermelho', 30, 'Steven Gerrard', 'Saeed Al-Ghamdi', 'Saudi Aramco', 'Nike', 13, 'Comandante', 'Prince Mohamed Bin Fahd Stadium', 'Ásia', 'Arábia Saudita', 'Dammam', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al Shabab FC', 'SHB', 1947, 'Branco e Preto', 30, 'Vítor Pereira', 'Khalid Al Baltan', 'Bank AlJazira', 'New Balance', 24, 'Leões Brancos', 'Prince Faisal bin Fahd Stadium', 'Ásia', 'Arábia Saudita', 'Riade', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Damac FC', 'DAM', 1974, 'Vermelho e Branco', 30, 'Cosmin Contra', 'Khalid Al-Ghamdi', 'Saudi Telecom', 'Erima', 2, 'Cavaleiros de Damac', 'Prince Sultan bin Abdul Aziz Stadium', 'Ásia', 'Arábia Saudita', 'Khamis Mushait', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al Fateh SC', 'FAT', 1958, 'Azul e Branco', 30, 'Slaven Bilić', 'Ahmed Al-Rashed', 'Almarai', 'Puma', 2, 'Al Namouthaji', 'Prince Abdullah bin Jalawi Stadium', 'Ásia', 'Arábia Saudita', 'Al-Hasa', 'Saudi Pro League');
+INSERT INTO TIMES VALUES('Al Rayyan SC', 'RAY', 1967, 'Vermelho e Preto', 30, 'Leonardo Jardim', 'Ali Bin Saeed Al-Nuaimi', 'Ooredoo', 'Nike', 17, 'Leões', 'Ahmad bin Ali Stadium', 'Ásia', 'Catar', 'Al Rayyan', 'Qatar Stars League');
+INSERT INTO TIMES VALUES('Al Sadd SC', 'SAD', 1969, 'Branco e Preto', 30, 'Wesam Rizik', 'Mohammad Bin Hammad', 'Qatar Airways', 'Puma', 75, 'Líder', 'Jassim Bin Hamad Stadium', 'Ásia', 'Catar', 'Doha', 'Qatar Stars League');
+INSERT INTO TIMES VALUES('Al Duhail SC', 'DUH', 2009, 'Vermelho e Branco', 30, 'Christophe Galtier', 'Khalifa Bin Hamad', 'Vodafone', 'Puma', 17, 'The Red Knights', 'Abdullah bin Khalifa Stadium', 'Ásia', 'Catar', 'Doha', 'Qatar Stars League');
+INSERT INTO TIMES VALUES('Al Arabi SC', 'ARA', 1952, 'Vermelho e Branco', 30, 'Younes Ali', 'Sheikh Tamim Bin Fahad', 'QNB', 'Adidas', 27, 'Sonhos', 'Grand Hamad Stadium', 'Ásia', 'Catar', 'Doha', 'Qatar Stars League');
+INSERT INTO TIMES VALUES('Qatar SC', 'QSC', 1961, 'Amarelo e Preto', 30, 'Helio Sousa', 'Sheikh Jassim bin Hamad', 'Qatar National Bank', 'Adidas', 14, 'Reis', 'Suheim Bin Hamad Stadium', 'Ásia', 'Catar', 'Doha', 'Qatar Stars League');
+INSERT INTO TIMES VALUES('Cerezo Osaka', 'CER', 1957, 'Rosa e Azul Marinho', 28, 'Akio Kogiku', 'Hiroshi Yozaki', 'Yanmar', 'Puma', 8, 'Lavi', 'Yodoko Sakura Stadium', 'Ásia', 'Japão', 'Osaka', 'J-League');
+INSERT INTO TIMES VALUES('Vissel Kobe', 'VIS', 1966, 'Vermelho e Preto', 28, 'Takayuki Yoshida', 'Hiroshi Mikitani', 'Rakuten', 'Asics', 4, 'Movi', 'Noevir Stadium Kobe', 'Ásia', 'Japão', 'Kobe', 'J-League');
+INSERT INTO TIMES VALUES('Urawa Red Diamonds', 'URA', 1950, 'Vermelho, Branco e Preto', 28, 'Per-Mathias Høgmo', 'Masanori Omi', 'Mitsubishi', 'Nike', 15, 'Reds', 'Saitama Stadium 2002', 'Ásia', 'Japão', 'Saitama', 'J-League');
+INSERT INTO TIMES VALUES('Kyoto Sanga FC', 'KYO', 1922, 'Roxo', 28, 'Kiyotaka Ishimaru', 'Masato Hachimine', 'Kyocera', 'Puma', 3, 'Kotosuke', 'Sanga Stadium by Kyocera', 'Ásia', 'Japão', 'Quioto', 'J-League');
+INSERT INTO TIMES VALUES('Kawasaki Frontale', 'KWF', 1955, 'Azul e Preto', 28, 'Toru Oniki', 'Yuji Fujino', 'Fujitsu', 'Puma', 11, 'Fron-ta', 'Todoroki Athletics Stadium', 'Ásia', 'Japão', 'Kawasaki', 'J-League');
+INSERT INTO TIMES VALUES('Wydad', 'WAC', 1937, 'Alvirrubro', 26, 'Mohamed Amine Benhachem', 'Hicham Ait Menna', 'Ingelec', 'Kappa', 39, 'Kurapika', 'Estádio Mohammed V', 'África', 'Marrocos', 'Casablanca', 'Banga Pro');
+INSERT INTO TIMES VALUES('Mamelodi Sundowns', 'MSD', 1970, 'Amarelo e Verde', 30, 'Rhulani Mokwena', 'Tebogo Motlanthe', 'Toyota', 'Puma', 21, 'The Brazilians', 'Loftus Versfeld Stadium', 'África', 'África do Sul', 'Pretória', 'Premiership Sul-Africana');
+INSERT INTO TIMES VALUES('AmaZulu FC', 'AMZ', 1932, 'Alviverde', 30, 'Pablo Franco', 'Sandile Zungu', 'Spar', 'Umbro', 2, 'Usuthu', 'Moses Mabhida Stadium', 'África', 'África do Sul', 'Durban', 'Premiership Sul-Africana');
+INSERT INTO TIMES VALUES('Polokwane City', 'POL', 2012, 'Preto e Vermelho', 30, 'Phuti Ledwaba', 'Japhet Mohlala', 'Pola', 'Umbro', 1, 'Rise and Shine', 'Peter Mokaba Stadium', 'África', 'África do Sul', 'Polokwane', 'Premiership Sul-Africana');
+INSERT INTO TIMES VALUES('TS Galaxy FC', 'TSG', 1982, 'Azul e Branco', 30, 'Sead Ramović', 'Zakhele Lepasa', 'RMB', 'Puma', 1, 'Rockets', 'Mbombela Stadium', 'África', 'África do Sul', 'Nelspruit', 'Premiership Sul-Africana');
+INSERT INTO TIMES VALUES('Raja Club Athletic', 'RCA', 1949, 'Alviverde', 30, 'Josef Zinnbauer', 'Mohamed Boudrika', 'Inwi', 'Puma', 28, 'Os Águias', 'Estádio Mohamed V', 'África', 'Marrocos', 'Casablanca', 'Botola Pro');
+INSERT INTO TIMES VALUES('Al Ahly', 'AHL', 1907, 'Vermelho e Branco', 30, 'Marcel Koller', 'Mahmoud El Khatib', 'WE', 'Adidas', 150, 'Red Devils', 'Cairo International Stadium', 'África', 'Egito', 'Cairo', 'Premier League Egípcia');
+INSERT INTO TIMES VALUES('Zamalek SC', 'ZSC', 1911, 'Branco e Vermelho', 30, 'José Gomes', 'Hussein Labib', 'Puma', 'Puma', 90, 'White Knights', 'Cairo International Stadium', 'África', 'Egito', 'Cairo', 'Premier League Egípcia');
+INSERT INTO TIMES VALUES('Pyramids FC', 'PYR', 2008, 'Vermelho e Branco', 30, 'Jaime Pacheco', 'Mamdouh Eid', 'Abu Dhabi Investment', 'Puma', 0, 'Pyramids', '30 June Stadium', 'África', 'Egito', 'Cairo', 'Premier League Egípcia');
+INSERT INTO TIMES VALUES('Al Masry', 'MAS', 1920, 'Alviverde', 30, 'Ali Maher', 'Samir Halabiya', 'WE', 'Umbro', 4, 'Al Akhdar', 'Port Said Stadium', 'África', 'Egito', 'Port Said', 'Premier League Egípcia');
+INSERT INTO TIMES VALUES('Paranoá',  'PEC', 2000, 'Azul e Amarelo', 25, 'Klésio Borges', 'Gedalva Egino Soares', 'ID Telecom', 'Tolledo Sports', 4, 'Sucuri', 'JK Paranoá', 'América do Sul', 'Brasil', 'Brasília', 'Estadual');
+INSERT INTO TIMES VALUES('Legião', 'LFC', 2006, 'Laranja e Branco', 24, 'Bruno Lessa', 'Jaime Corso', NULL, '2effesport', 1, 'Leão', 'Mané Garrincha', 'América do Sul', 'Brasil', 'Brasília', 'Estadual');
+INSERT INTO TIMES VALUES ('Amazonia F.C.', 'AMA', 2021, 'Azul e Amarelo', 30, 'A definir', 'Eduardo Monteiro', 'Próprio', NULL, 0, 'Curumin', 'Arena da Amazônia', 'Brasil', 'AM', 'Amazonense');
+INSERT INTO TIMES VALUES ('S. R. Amazonas', 'SRA', 1961, 'Verde e Amarelo', 30, 'Sidney Bento', 'Luizinho', NULL, 'Super Bolla', 10, 'Pajé', 'Ismael Benigno', 'Brasil', 'AM', 'Série D');
+INSERT INTO TIMES VALUES ('Ypiranga F.C.', 'YPI', 1924, 'Amarelo e Verde', 30, 'Thiago Carvalho', 'Adilson Stankiewicz', 'Banrisul', 'Próprio', 12, 'Canarinho', 'Colosso da Lagoa', 'Brasil', 'Rio Grande do Sul', 'Série C');
+INSERT INTO TIMES VALUES ('Polissya Zhytomyr', 'POL', 1959, 'Amarelo e Verde', 28, 'Serhiy Shyschenko', 'Gennadiy Butkevych', 'Vostok', 'Puma', 3, 'Lobo', 'Tsentralnyi', 'Ucrânia', 'Zhytomyr', 'Premier League Ucr.');
+INSERT INTO TIMES VALUES ('Karpaty Lviv', 'KAR', 1963, 'Alviverde', 28, 'Roman Kryshtal', 'Stepan Yurchyshyn', 'JSC Ukrgasbank', 'Nike', 4, 'Leão', 'Ukraina Stadium', 'Ucrânia', 'Lviv', '1ª Liga Ucr.');
+INSERT INTO TIMES VALUES ('CSKA Moscou', 'CSKA', 1911, 'Azul e Vermelho', 30, 'Marko Nikolić', 'Evgeniy Giner', 'VTB Bank', 'Adidas', 48, 'Cavalo', 'VEB Arena', 'Rússia', 'Moscou', 'Liga Premier Russa');
+INSERT INTO TIMES VALUES ('Akhmat Grozny', 'AKH', 1958, 'Alviverde', 30, 'Magomed Adiev', 'Magomed Daudov', 'Akhmat Foundation', 'Adidas', 2, 'Lobo', 'Akhmat-Arena', 'Rússia', 'Grozny', 'Liga Premier Russa');
+INSERT INTO TIMES VALUES ('Lokomotiv Moscou', 'LOK', 1923, 'Verde e Vermelho', 30, 'Mikhail Galaktionov', 'Vladimir Leonchenko', 'Russian Railways', 'Puma', 22, 'Locomotiva', 'RZD Arena', 'Rússia', 'Moscou', 'Liga Premier Russa');
+INSERT INTO TIMES VALUES ('Spartak Moscou', 'SPA', 1922, 'Vermelho e Branco', 30, 'Dejan Stanković', 'Leonid Fedun', 'Lukoil', 'Nike', 45, 'Gladiador', 'Otkrytiye Arena', 'Rússia', 'Moscou', 'Liga Premier Russa');
+INSERT INTO TIMES VALUES ('Al Wasl FC', 'WAS', 1960, 'Amarelo e Preto', 30, 'Milos Milojevic', 'Rashid Bin Fadel', 'Próprio', 'New Balance', 20, 'Leopardo', 'Zabeel Stadium', 'EAU', 'Dubai', 'UAE Pro League');
+INSERT INTO TIMES VALUES ('Shabab Al Ahli', 'AHL', 1970, 'Vermelho e Branco', 30, 'Igor Jovićević', 'Khalifa Bin Saeed', 'Próprio', 'Nike', 30, 'Falcão', 'Rashid Stadium', 'EAU', 'Dubai', 'UAE Pro League');
+INSERT INTO TIMES VALUES ('Al Jazira S.C.', 'JAZ', 1974, 'Vermelho e Branco', 30, 'Frank de Boer', 'Mohamed Bin Zayed', 'Próprio', 'Adidas', 10, 'Aranha', 'Mohammed Bin Zayed', 'EAU', 'Abu Dhabi', 'UAE Pro League');
+INSERT INTO TIMES VALUES ('Al Ain FC', 'AIN', 1968, 'Roxo e Branco', 30, 'Hernán Crespo', 'Mohammed Bin Zayed', 'Próprio', 'Nike', 40, 'Chefe', 'Hazza Bin Zayed', 'EAU', 'Al Ain', 'UAE Pro League');
+INSERT INTO TIMES VALUES ('Al Wahda FC', 'WAH', 1974, 'Marrom e Branco', 30, 'M. van Bronckhorst', 'Saeed Saif Jassim', 'Próprio', 'Adidas', 15, 'Cavaleiros', 'Al Nahyan', 'EAU', 'Abu Dhabi', 'UAE Pro League');
+INSERT INTO TIMES VALUES ('C.R.B.', 'CRB', 1912, 'Vermelho e Branco', 35, 'Daniel Paulista', 'Marcos Barbosa', 'ASA', 'Volt', 45, 'Galo de Campina', 'Rei Pelé', 'Brasil', 'Alagoas', 'Série B');
+INSERT INTO TIMES VALUES ('C.S.A.', 'CSA', 1913, 'Azul e Branco', 35, 'Cristian de Souza', 'Omar Coêlho Silva', 'ASA', 'Volt', 40, 'Azulão', 'Rei Pelé', 'Brasil', 'Alagoas', 'Série C');
+INSERT INTO TIMES VALUES ('Confiança', 'CON', 1936, 'Vermelho e Branco', 30, 'Gerson Gusmão', 'Hyago França', 'Bet Nacional', 'Volt', 25, 'Dragão', 'Batistão', 'Brasil', 'Sergipe', 'Série C');
+INSERT INTO TIMES VALUES ('Ituano F.C.', 'ITU', 1947, 'Preto e Vermelho', 30, 'Alberto Valentim', 'Ricardo Giordani', 'Picolo', 'Kanxa', 10, 'Galo de Itu', 'Novelli Júnior', 'Brasil', 'São Paulo', 'Série B');
+INSERT INTO TIMES VALUES ('Figueirense F.C.', 'FIG', 1921, 'Preto e Branco', 30, 'João Burse', 'Norton Boppré', 'Caixa', 'Volt', 20, 'Furacão', 'Orlando Scarpelli', 'Brasil', 'Santa Catarina', 'Série C');
+INSERT INTO TIMES VALUES ('Guarani F.C.', 'GUA', 1911, 'Alviverde', 30, 'Claudinei Oliveira', 'Ricardo Moisés', 'Lojas Guaibim', 'Kappa', 15, 'Bugre', 'Brinco de Ouro', 'Brasil', 'São Paulo', 'Série B');
+INSERT INTO TIMES VALUES ('A.A. Ponte Preta', 'PON', 1900, 'Preto e Branco', 30, 'João Brigatti', 'Marco Antônio Eberlin', 'Vitta Residencial', 'Umbro', 10, 'Macaca', 'Moisés Lucarelli', 'Brasil', 'SP', 'Série B');
+INSERT INTO TIMES VALUES ('Cerro Porteño', 'CCP', 1912, 'Azul e Vermelho', 30, 'Manolo Jiménez', 'Juan José Zapag', 'Visión Banco', 'Puma', 38, 'Ciclón', 'Nueva Olla', 'Paraguai', 'Assunção', 'Primera Div. Par.');
+INSERT INTO TIMES VALUES ('Guaraní (PAR)', 'GUA', 1903, 'Amarelo e Preto', 30, 'Francisco Arce', 'Juan Alberto Acosta', 'Tigo', 'Joma', 16, 'Aborígene', 'Rogelio Livieres', 'Paraguai', 'Assunção', 'Primera Div. Par.');
+INSERT INTO TIMES VALUES ('Libertad', 'LIB', 1905, 'Branco e Preto', 30, 'Ariel Galeano', 'Rubén Di Tore', 'Tigo', 'Puma', 28, 'Gumarelo', 'La Huerta', 'Paraguai', 'Assunção', 'Primera Div. Par.');
+INSERT INTO TIMES VALUES ('Sportivo Luqueño', 'SLU', 1921, 'Azul e Amarelo', 30, 'Julio César Cáceres', 'Daniel Rodríguez', 'Tigo', 'Diadora', 12, 'Kure Luque', 'Feliciano Cáceres', 'Paraguai', 'Luque', 'Primera Div. Par.');
+INSERT INTO TIMES VALUES ('Nacional (PAR)', 'NAC', 1904, 'Branco e Vermelho', 30, 'Víctor Bernay', 'Guillermo Vera', 'Tigo', 'Lotto', 13, 'Acadêmico', 'Arsenio Erico', 'Paraguai', 'Assunção', 'Primera Div. Par.');
+INSERT INTO TIMES VALUES ('Defensor Sporting', 'DEF', 1913, 'Roxo e Branco', 30, 'Julio César Ribas', 'Alberto Ward', 'Antel', 'Umbro', 20, 'Roxo', 'Franzini', 'Uruguai', 'Montevidéu', 'Primera Div. Urug.');
+INSERT INTO TIMES VALUES ('Liverpool F.C. (URU)', 'LIV', 1915, 'Preto e Azul', 30, 'Emiliano Alfaro', 'José Luis Palma', 'Sura', 'Puma', 8, 'Negriazul', 'Belvedere', 'Uruguai', 'Montevidéu', 'Primera Div. Urug.');
+INSERT INTO TIMES VALUES ('C. A. Platense', 'PLA', 1907, 'Branco e Marrom', 30, 'Sebastián Grazzini', 'Sebastián Ordoñez', 'Codere', 'Kappa', 2, 'Calamar', 'Ciudad de Vicente López', 'Argentina', 'Vicente López', 'Liga Profissional');
+INSERT INTO TIMES VALUES ('Rosario Central', 'ROS', 1889, 'Amarelo e Azul', 30, 'Miguel Ángel Russo', 'Gonzalo Belloso', 'Banco Municipal', 'Umbro', 12, 'Canalla', 'Gigante de Arroyito', 'Argentina', 'Rosário', 'Liga Profissional');
+INSERT INTO TIMES VALUES ('Talleres', 'TAL', 1913, 'Azul e Branco', 30, 'Walter Ribonetto', 'Andrés Fassi', 'ICBC', 'Penalty', 5, 'T', 'Mario Alberto Kempes', 'Argentina', 'Córdoba', 'Liga Profissional');
+INSERT INTO TIMES VALUES ('C. A. Tigre', 'TIG', 1902, 'Azul e Vermelho', 30, 'Néstor Gorosito', 'Ezequiel Melaraña', 'DirecTV', 'Nike', 5, 'Matador', 'José Dellagiovanna', 'Argentina', 'Victoria', 'Liga Profissional');
+INSERT INTO TIMES VALUES ('Hellas Verona', 'HEL', 1903, 'Amarelo e Azul', 28, 'Marco Baroni', 'Maurizio Setti', 'Sinergy', 'Macron', 10, 'Mastini', 'Marcantonio Bentegodi', 'Itália', 'Verona', 'Serie A');
+INSERT INTO TIMES VALUES ('Genoa C.F.C.', 'GEN', 1893, 'Vermelho e Azul', 28, 'Alberto Gilardino', 'Alberto Zangrillo', 'Banca Ifis', 'Kappa', 15, 'Grifone', 'Luigi Ferraris', 'Itália', 'Gênova', 'Serie A');
+INSERT INTO TIMES VALUES ('Udinese Calcio', 'UDI', 1896, 'Preto e Branco', 28, 'Fabio Cannavaro', 'Gianpaolo Pozzo', 'Bluenergy', 'Adidas', 10, 'Zebra', 'Dacia Arena', 'Itália', 'Udine', 'Serie A');
+INSERT INTO TIMES VALUES ('Parma Calcio 1913', 'PAR', 1913, 'Amarelo e Azul', 28, 'Fabio Pecchia', 'Kyle Krause', 'Cetilar', 'Puma', 18, 'Ducali', 'Ennio Tardini', 'Itália', 'Parma', 'Serie B');
+INSERT INTO TIMES VALUES ('CSKA Sofia', 'CSKA', 1948, 'Vermelho e Branco', 30, 'Stamen Belchev', 'Hristo Stoichkov', 'efbet', 'Adidas', 40, 'Militar', 'Balgarska Armiya', 'Bulgária', 'Sófia', 'Primeira Liga Búlgara');
+INSERT INTO TIMES VALUES ('Botev Plovdiv', 'BOT', 1912, 'Amarelo e Preto', 30, 'Dušan Kerkez', 'Anton Zingarevich', 'efbet', 'Puma', 20, 'Canário', 'Hristo Botev', 'Bulgária', 'Plovdiv', 'Primeira Liga Búlgara');
+INSERT INTO TIMES VALUES ('Lokomotiv Sófia', 'LOK', 1929, 'Preto e Vermelho', 30, 'Ivan Kolev', 'Ivan Vasilev', 'efbet', 'Joma', 15, 'Locomotiva', 'Lokomotiv', 'Bulgária', 'Sófia', 'Primeira Liga Búlgara');
+INSERT INTO TIMES VALUES ('CSKA 1948 Sofia', 'CSK', 2016, 'Vermelho e Branco', 30, 'Valentin Iliev', 'Tsvetomir Naydenov', 'efbet', 'Adidas', 1, NULL, 'Vasil Levski', 'Bulgária', 'Sófia', 'Primeira Liga Búlgara');
+INSERT INTO TIMES VALUES ('Lokomotiv Mezdra', 'LOM', 1945, 'Azul e Branco', 30, 'Anton Stankov', 'Ivan Georgiev', NULL, 'Próprio', 3, NULL, 'Lokomotiv', 'Bulgária', 'Mezdra', 'V OAFET (3ª Div.)');
+INSERT INTO TIMES VALUES ('Septemvri Sofia', 'SEP', 1944, 'Vermelho e Preto', 30, 'Nikolay Mitov', 'Rumen Chandrov', NULL, 'Próprio', 5, NULL, 'Dragalevtsi', 'Bulgária', 'Sófia', 'Segunda Liga Búlgara');
+INSERT INTO TIMES VALUES ('Maritsa Plovdiv', 'MAR', 1921, 'Amarelo e Azul', 30, 'Plamen Petrov', 'Hristo Hristov', NULL, 'Próprio', 2, NULL, 'Maritsa', 'Bulgária', 'Plovdiv', 'Segunda Liga Búlgara');
+INSERT INTO TIMES VALUES ('Spartak Pleven', 'SPL', 1919, 'Azul e Branco', 30, 'Georgi Vladimirov', 'Pavel Panev', NULL, 'Próprio', 5, NULL, 'Pleven', 'Bulgária', 'Pleven', 'Segunda Liga Búlgara');
+INSERT INTO TIMES VALUES ('FC Lovech', 'FCL', 1921, 'Laranja e Verde', 30, NULL, 'Petko Panayotov', NULL, 'Nike', 4, NULL, 'Lovech', 'Bulgária', 'Lovech', '3ª Liga Búlgara');
+INSERT INTO TIMES VALUES ('Lokomotiv G. O.', 'LOG', 1932, 'Preto e Branco', 30, 'Radostin Kitev', 'Hristo Tsonev', NULL, 'Zeus', 3, NULL, 'Lokomotiv', 'Bulgária', 'Gorna Oryahovitsa', '3ª Liga Búlgara');
+INSERT INTO TIMES VALUES ('AIK Fotboll', 'AIK', 1891, 'Preto e Amarelo', 30, 'Henning Berg', 'Mikael Ahlerup', 'Åbro', 'Nike', 25, 'Gnagaren', 'Friends Arena', 'Suécia', 'Estocolmo', 'Allsvenskan');
+INSERT INTO TIMES VALUES ('GAIS', 'GAI', 1894, 'Preto e Verde', 30, 'Fredrik Holmberg', 'Stefan Eklund', 'Prioritet Finans', 'Puma', 15, 'Makrillen', 'Gamla Ullevi', 'Suécia', 'Gotemburgo', 'Allsvenskan');
+INSERT INTO TIMES VALUES ('BK Häcken', 'BKH', 1940, 'Amarelo e Preto', 30, 'Pål Arne Johansen', 'Dennis Andersson', 'Gais', 'Puma', 5, 'Getingarna', 'Bravida Arena', 'Suécia', 'Gotemburgo', 'Allsvenskan');
+INSERT INTO TIMES VALUES ('IFK Norrköping', 'IFN', 1897, 'Azul e Branco', 30, 'Andreas Alm', 'Sakarias Mårdh', 'Holmen', 'Puma', 20, 'Peking', 'Platinumcars Arena', 'Suécia', 'Norrköping', 'Allsvenskan');
+INSERT INTO TIMES VALUES ('IFK Värnamo', 'IFV', 1912, 'Branco e Azul', 30, 'Anes Murselovic', 'Håkan Edfors', 'Elitfönster', 'Craft', 1, NULL, 'Finnvedsvallen', 'Suécia', 'Värnamo', 'Allsvenskan');
+INSERT INTO TIMES VALUES ('Halmstads BK', 'HBK', 1915, 'Azul e Branco', 30, 'Magnus Haglund', 'Pelle Nilsson', 'Länsförsäkringar', 'Puma', 10, 'Bollklubben', 'Örjans Vall', 'Suécia', 'Halmstad', 'Allsvenskan');
+INSERT INTO TIMES VALUES ('BSC Young Boys', 'YB', 1898, 'Amarelo e Preto', 30, 'Joël Magnin', 'Hanspeter Kienberger', 'PostFinance', 'Adidas', 30, 'Urso', 'Wankdorf', 'Suíça', 'Berna', 'Super League Suíça');
+INSERT INTO TIMES VALUES ('Servette FC', 'SFC', 1890, 'Grená e Branco', 30, 'René Weiler', 'Pascal Jenny', 'Genève Aéroport', 'Puma', 25, 'Grifone', 'Stade de Genève', 'Suíça', 'Genebra', 'Super League Suíça');
+INSERT INTO TIMES VALUES ('FC St. Gallen', 'STG', 1879, 'Alviverde', 30, 'Peter Zeidler', 'Matthias Hüppi', 'St. Galler Kantonalbank', 'Puma', 10, 'Säbelfisch', 'Kybunpark', 'Suíça', 'St. Gallen', 'Super League Suíça');
+INSERT INTO TIMES VALUES ('FC Zürich', 'FCZ', 1896, 'Azul e Branco', 30, 'Ricardo Moniz', 'Ancillo Canepa', 'ZKB', 'Adidas', 25, 'Leão', 'Letzigrund', 'Suíça', 'Zurique', 'Super League Suíça');
+INSERT INTO TIMES VALUES ('FC Winterthur', 'FCW', 1896, 'Vermelho e Branco', 30, 'Patrick Rahmen', 'Stefan Gasser', 'Raiffeisen', 'Mizuno', 10, 'Eichhörnchen', 'Schützenwiese', 'Suíça', 'Winterthur', 'Super League Suíça');
+INSERT INTO TIMES VALUES ('Stade Lausanne', 'SLO', 1896, 'Branco e Azul', 30, 'Ludovic Magnin', 'Frédéric Baumgartner', 'Baloise', 'Mizuno', 5, NULL, 'Pontaise', 'Suíça', 'Lausana', 'Super League Suíça');
+INSERT INTO TIMES VALUES ('Vevey-Sports', 'VS', 1905, 'Amarelo e Azul', 30, 'Jean-Philippe Leclaire', 'David Luyet', NULL, 'Macron', 2, NULL, 'Enclume', 'Suíça', 'Vevey', '1ª Liga Clássica');
+INSERT INTO TIMES VALUES ('Fortaleza E.C.', 'FOR', 1918, 'Tricolor', 35, 'Juan Pablo Vojvoda', 'Marcelo Paz', 'Novibet', 'Adidas', 45, 'Leão', 'Castelão', 'Brasil', 'Ceará', 'Série A');
+INSERT INTO TIMES VALUES ('Fluminense de Feira', 'FF', 1941, 'Branco, Azul e Grená', 30, NULL, 'José Francisco Pinto', NULL, 'Próprio', 10, 'Touro do Sertão', 'Joia da Princesa', 'Brasil', 'Bahia', 'Estadual');
+INSERT INTO TIMES VALUES ('Ceará S.C.', 'CEA', 1914, 'Preto e Branco', 35, 'Vágner Mancini', 'João Paulo Silva', 'Betzord', 'New Balance', 50, 'Vovô', 'Castelão', 'Brasil', 'Ceará', 'Série B');
+INSERT INTO TIMES VALUES ('ABC F.C.', 'ABC', 1915, 'Preto e Branco', 30, 'Marcelo Cabo', 'Bira do Pindaré', NULL, 'Diadora', 60, 'Elefante', 'Frasqueirão', 'Brasil', 'Rio Grande do Norte', 'Série C');
+INSERT INTO TIMES VALUES ('América de Natal', 'AMD', 1915, 'Vermelho e Branco', 30, 'Marquinhos Santos', 'José Ricardo', NULL, 'Super Bolla', 45, 'Dragão', 'Arena das Dunas', 'Brasil', 'Rio Grande do Norte', 'Série D');
+INSERT INTO TIMES VALUES ('América F.C. (RJ)', 'AMÉ', 1914, 'Vermelho e Branco', 30, 'Arturzinho', 'Sidney Moura', NULL, 'Ícone Sports', 15, 'Diabo', 'Giulite Coutinho', 'Brasil', 'Rio de Janeiro', 'Carioca (A2)');
+INSERT INTO TIMES VALUES ('Afogados F.C.', 'AFG', 2013, 'Azul, Vermelho e Branco', 30, 'Pedro Manta', 'João Guedes', 'Aposta Ganha', 'Próprio', 1, 'Coruja', 'Vianão', 'Brasil', 'Pernambuco', 'Pernambucano');
+INSERT INTO TIMES VALUES ('Leônico F.C.', 'LEO', 1940, 'Verde e Amarelo', 30, NULL, 'Ricardo Carvalho', NULL, 'Próprio', 5, 'Leão', 'Pituaçu', 'Brasil', 'Bahia', 'Estadual');
+INSERT INTO TIMES VALUES ('Sampaio Corrêa', 'SAM', 1923, 'Vermelho, Amarelo e Verde', 30, 'Felipe Conceição', 'Sergio Frota', 'Sicoob', 'Numer', 55, 'Tubarão', 'Castelão', 'Brasil', 'Maranhão', 'Série C');
+INSERT INTO TIMES VALUES ('Treze F.C.', 'TRE', 1925, 'Preto e Branco', 30, 'Waguinho Dias', 'Artur Bolinha', 'Bet Nacional', 'Ícone Sports', 40, 'Galo da Borborema', 'Amigão', 'Brasil', 'Paraíba', 'Série D');
+INSERT INTO TIMES VALUES ('Moto Club', 'MOT', 1937, 'Preto e Vermelho', 30, 'Tuca Guimarães', 'Yago Pinho', NULL, 'Super Bolla', 45, 'Papão do Norte', 'Castelão', 'Brasil', 'Maranhão', 'Série D');
+INSERT INTO TIMES VALUES ('Campinense C.L.', 'CAM', 1915, 'Vermelho e Preto', 30, 'Dorgival Júnior', 'Danylo Feitosa', 'Próprio', 'Próprio', 40, 'Raposa', 'Amigão', 'Brasil', 'Paraíba', 'Paraibano');
+INSERT INTO TIMES VALUES ('Ferroviário A.C.', 'FER', 1937, 'Vermelho, Amarelo e Preto', 30, 'Maurício Copertino', 'Aderson Maia', 'Betzord', 'Ícone Sports', 40, 'Tubarão da Barra', 'Elzir Cabral', 'Brasil', 'Ceará', 'Série C');
+INSERT INTO TIMES VALUES ('A.S.A.', 'ASA', 1952, 'Preto e Branco', 30, 'Paulo Roberto', 'Rogério Siqueira', 'Prefeitura', 'Próprio', 30, 'Fantasma', 'Coaracy da Mata', 'Brasil', 'Alagoas', 'Série D');
+INSERT INTO TIMES VALUES ('Bahia de Feira', 'BDF', 1937, 'Azul e Branco', 30, NULL, 'Tiago de Lima', NULL, 'Próprio', 5, 'Tremendão', 'Arena Cajueiro', 'Brasil', 'Bahia', 'Estadual');
+INSERT INTO TIMES VALUES ('Ypiranga (BA)', 'YPI', 1906, 'Amarelo e Preto', 30, NULL, 'Emilio Santos', NULL, 'Próprio', 20, 'Mais Querido', 'Pituaçu', 'Brasil', 'Bahia', 'Estadual');
+INSERT INTO TIMES VALUES ('Flamengo (PI)', 'FLA', 1937, 'Vermelho e Preto', 30, 'Éverton', 'Ricardo Ferreira', NULL, 'Próprio', 25, 'Leão', 'Albertão', 'Brasil', 'Piauí', 'Estadual');
+INSERT INTO TIMES VALUES ('Atlético Acreano', 'ATA', 1952, 'Azul e Branco', 30, NULL, 'Elison Azevedo', NULL, 'Próprio', 20, 'Galo Carijó', 'Arena da Floresta', 'Brasil', 'Acre', 'Estadual');
+INSERT INTO TIMES VALUES ('Atlético Piauiense', 'ATP', 2021, 'Vermelho e Branco', 30, NULL, NULL, NULL, 'Próprio', 0, NULL, 'Lindolfo Monteiro', 'Brasil', 'Piauí', 'Estadual');
+INSERT INTO TIMES VALUES ('Picos (PI)', 'PIC', 1976, 'Amarelo e Azul', 30, NULL, NULL, NULL, 'Próprio', 10, 'Zangão', 'Helvídio Nunes', 'Brasil', 'Piauí', 'Estadual');
+INSERT INTO TIMES VALUES ('Novorizontino', 'NOV', 2010, 'Amarelo e Preto', 30, 'Eduardo Baptista', 'Genilson da Rocha', 'Copacol', 'New Balance', 2, 'Tigre', 'Jorge Ismael de Biasi', 'Brasil', 'São Paulo', 'Série B');
+INSERT INTO TIMES VALUES ('Noroeste', 'NOR', 1910, 'Vermelho e Branco', 30, NULL, 'Emílio Brumati', NULL, 'Próprio', 10, 'Elefante', 'Alfredo de Castilho', 'Brasil', 'São Paulo', 'Série A2 SP');
+INSERT INTO TIMES VALUES ('São Bernardo', 'SBC', 2004, 'Amarelo e Preto', 30, 'Ricardo Catalá', 'Luiz Fernando Teixeira', 'Tigre', 'Próprio', 5, 'Cachorrão', 'Primeiro de Maio', 'Brasil', 'São Paulo', 'Série C');
+INSERT INTO TIMES VALUES ('Velo Clube', 'VEC', 1910, 'Vermelho e Branco', 30, NULL, 'José Luis Coreia', NULL, NULL, 5, 'Galo Vermelho', 'Benitão', 'Brasil', 'São Paulo', 'Série A2 SP');
+INSERT INTO TIMES VALUES ('Djoliba AC', 'DJO', 1960, 'Vermelho e Verde', 30, 'Fousseyni Diawara', 'Karim Keïta', NULL, 'Próprio', 50, 'Touro', '26 Mars', 'Mali', 'Bamako', 'Mali Première Division');
+INSERT INTO TIMES VALUES ('Asante Kotoko', 'KOT', 1935, 'Vermelho', 30, 'Prosper Narteh Ogum', 'Nana Yaw Amponsah', 'Hisense', 'Puma', 60, 'Porco-espinho', 'Baba Yara Stadium', 'Gana', 'Kumasi', 'Premier League Gana');
+INSERT INTO TIMES VALUES ('Etoile Filante', 'ETF', 1933, 'Azul e Branco', 30, NULL, NULL, NULL, 'Próprio', 30, NULL, 'Stade du 4 Août', 'Burkina Faso', 'Ouagadougou', 'Première Division');
+INSERT INTO TIMES VALUES ('Ismaily S.C.', 'ISM', 1924, 'Amarelo e Azul', 30, 'Hamza El Gamal', 'Yahya El-Komy', 'Orange', 'Puma', 15, 'Dragão', 'Ismaily Stadium', 'Egito', 'Ismaília', 'Premier League Egito');
+INSERT INTO TIMES VALUES ('Hafia F.C.', 'HAF', 1951, 'Alviverde', 30, 'Pascal Baruxakis', 'Kerfalla Person Camara', NULL, 'Próprio', 30, 'Fogo', 'Stade du 28 Septembre', 'Guiné', 'Conacri', 'Ligue 1 Guiné');
+
+SELECT * FROM times;
+
+SELECT nome, sigla, ano, tecnico, liga
+FROM times
+ORDER BY nome;
+
+SELECT nome, pais, cidade, estadio
+FROM times
+ORDER BY pais, cidade, nome;
+
+SELECT *
+FROM times
+WHERE pais = 'Brasil'
+ORDER BY cidade, nome;
+
+SELECT nome, sigla, liga
+FROM times
+WHERE liga ILIKE '%brasile%'
+ORDER BY nome;
+
+SELECT nome, pais, liga
+FROM times
+WHERE continente = 'Europa'
+ORDER BY pais, nome;
+
+SELECT nome, tecnico
+FROM times
+WHERE tecnico IS NULL
+ORDER BY nome;
+
+SELECT nome, fornecedor
+FROM times
+WHERE fornecedor IS NULL
+ORDER BY nome;
+
+SELECT nome, ano
+FROM times
+WHERE ano BETWEEN 1900 AND 1950
+ORDER BY ano, nome;
+
+SELECT nome, titulos
+FROM times
+WHERE titulos >= 50
+ORDER BY titulos DESC, nome;
+
+SELECT nome, titulos
+FROM times
+ORDER BY titulos DESC, nome
+LIMIT 10;
+
+SELECT nome, qntd_jogadores
+FROM times
+ORDER BY qntd_jogadores DESC, nome
+LIMIT 10;
+
+SELECT nome, ano
+FROM times
+ORDER BY ano ASC, nome
+LIMIT 10;
+
+SELECT t.*
+FROM times t
+WHERE t.titulos = (
+  SELECT MAX(t2.titulos)
+  FROM times t2
+  WHERE t2.liga = t.liga
+)
+ORDER BY t.liga, t.titulos DESC, t.nome;
+
+SELECT t.*
+FROM times t
+WHERE t.titulos > (
+  SELECT AVG(t2.titulos)
+  FROM times t2
+  WHERE t2.pais = t.pais
+)
+ORDER BY t.pais, t.titulos DESC, t.nome;
+
+SELECT
+  pais,
+  nome,
+  titulos,
+  DENSE_RANK() OVER (PARTITION BY pais ORDER BY titulos DESC) AS rank_no_pais
+FROM times
+ORDER BY pais, rank_no_pais, nome;
+
+SELECT nome, patrocinador
+FROM times
+WHERE patrocinador ILIKE '%bet%'
+ORDER BY nome;
+
+SELECT nome, estadio
+FROM times
+WHERE estadio ILIKE '%arena%'
+ORDER BY nome;
+
+SELECT pais,
+       ROUND(AVG(titulos)::numeric, 2) AS media_titulos,
+       MAX(titulos) AS max_titulos,
+       MIN(titulos) AS min_titulos
+FROM times
+GROUP BY pais
+ORDER BY media_titulos DESC, pais;
