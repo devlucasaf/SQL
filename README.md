@@ -31,11 +31,19 @@ O repositório pode acabar bagunçado — os arquivos serão salvos a fim de mos
     <h1>🛠️ Ferramentas</h1>
     <img
         align="center" 
-        alt="SQL" 
-        title="SQL"
+        alt="Sql" 
+        title="Sql"
         height="60" 
-        style="padding-right: 10px;"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+        style="padding-right: 10px;" 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" 
+    />          
+    <img
+        align="center" 
+        alt="SqlServer" 
+        title="SqlServer"
+        height="60" 
+        style="padding-right: 10px;" 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" 
     />
     <img
         align="center"
@@ -55,11 +63,30 @@ O repositório pode acabar bagunçado — os arquivos serão salvos a fim de mos
     />
     <img
         align="center"
-        alt="Excel"
-        tittle="Excel"
+        alt="SSMS"
+        tittle="SSMS"
+        height="60"
+        style="padding-right: 10px;"
+        href="https://skillicons.dev"
+        src="https://datamodel.com/wp-content/uploads/2025/05/ssms_21.png"
+    />
+    <img
+        align="center"
+        alt="github"
+        tittle="GitHub"
         height="60" 
         style="padding-right: 10px;" 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Microsoft_Excel_2013-2019_logo.svg/2170px-Microsoft_Excel_2013-2019_logo.svg.png"
+        href="https://skillicons.dev"
+        src="https://skillicons.dev/icons?i=github"
+    /> 
+    <img
+        align="center"
+        alt="git"
+        tittle="Git"
+        height="60"
+        style="padding-right: 10px;"
+        href="https://skillicons.dev"
+        src="https://skillicons.dev/icons?i=git"
     />
 </div>
 
